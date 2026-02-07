@@ -1,0 +1,1908 @@
+{
+  "piano_alimentare": {
+    "settimana_1": {
+      "lunedi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n°1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Crackers non salati",
+            "quantita": "20 gr",
+            "cad": "2660"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta e fagioli",
+            "quantita": null,
+            "cad": "1864",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "40 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Fagioli secchi",
+                "quantita": "60 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Fesa di tacchino arrosto",
+            "quantita": "100 gr",
+            "cad": "1979"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Banane",
+            "quantita": "200 gr",
+            "cad": "2903"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Kiwi",
+            "quantita": "180 gr",
+            "cad": "2911"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Frittata con parmigiano",
+            "quantita": null,
+            "cad": "2184",
+            "composizione": [
+              {
+                "alimento": "Uovo di gallina",
+                "quantita": "n° 1",
+                "cad": null
+              },
+              {
+                "alimento": "Parmigiano grattugiato",
+                "quantita": "4 cucchiaini",
+                "cad": "3120"
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "60 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "3 cucchiaini",
+            "cad": "3077"
+          }
+        ]
+      },
+      "martedi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n° 1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+            "cad": "4208"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta, pomodori e mozzarella",
+            "quantita": null,
+            "cad": "63",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "70 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Pomodori",
+                "quantita": "70 gr",
+                "cad": null
+              },
+              {
+                "alimento": "Mozzarella",
+                "quantita": "50 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Prugne",
+            "quantita": "300 gr",
+            "cad": "2927"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Prugne",
+            "quantita": "200 gr",
+            "cad": "2927"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Tonno al naturale",
+            "quantita": "150 gr",
+            "cad": "2082"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "4 cucchiaini",
+            "cad": "3077"
+          }
+        ]
+      },
+      "mercoledi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n°1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Crackers non salati",
+            "quantita": "20 gr",
+            "cad": "2660"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Riso con i piselli",
+            "quantita": null,
+            "cad": "369",
+            "composizione": [
+              {
+                "alimento": "Riso",
+                "quantita": "70 gr",
+                "cad": "1921"
+              },
+              {
+                "alimento": "Piselli freschi",
+                "quantita": "30 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Pere",
+            "quantita": "300 gr",
+            "cad": "2923"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Prugne",
+            "quantita": "200 gr",
+            "cad": "2927"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Manzo magro",
+            "quantita": "230 gr",
+            "cad": "1954"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "4 cucchiaini e 1/2",
+            "cad": "3077"
+          }
+        ]
+      },
+      "giovedi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n° 1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+            "cad": "4208"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta con i frutti di mare",
+            "quantita": null,
+            "cad": "19",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "70 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Frutti di mare",
+                "quantita": "30 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Formaggio cremoso light",
+            "quantita": "120 gr",
+            "cad": "2121"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Banane",
+            "quantita": "200 gr",
+            "cad": "2903"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Ananas",
+            "quantita": "210 gr",
+            "cad": "2900"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Bresaola",
+            "quantita": "100 gr",
+            "cad": "1974"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "2 cucchiaini",
+            "cad": "3077"
+          }
+        ]
+      },
+      "venerdi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n° 1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Crackers non salati",
+            "quantita": "20 gr",
+            "cad": "2660"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Riso, funghi e parmigiano",
+            "quantita": null,
+            "cad": "401",
+            "composizione": [
+              {
+                "alimento": "Riso",
+                "quantita": "80 gr",
+                "cad": "1921"
+              },
+              {
+                "alimento": "Funghi",
+                "quantita": "40 gr",
+                "cad": null
+              },
+              {
+                "alimento": "Parmigiano grattugiato",
+                "quantita": "10 gr",
+                "cad": "3120"
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Pere",
+            "quantita": "300 gr",
+            "cad": "2923"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Banane",
+            "quantita": "100 gr",
+            "cad": "2903"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Spigola",
+            "quantita": "240 gr",
+            "cad": "2061"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "3 cucchiaini e 1/2",
+            "cad": "3077"
+          }
+        ]
+      },
+      "sabato": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n° 1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+            "cad": "4208"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Petto di pollo",
+            "quantita": "220 gr",
+            "cad": "1957"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Banane",
+            "quantita": "50 gr",
+            "cad": "2903"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Mele",
+            "quantita": "150 gr",
+            "cad": "2918"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Pizza Margherita al piatto",
+            "quantita": "210 gr",
+            "cad": "1760"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "30 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "4 cucchiaini",
+            "cad": "3077"
+          }
+        ]
+      },
+      "domenica": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n° 1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasto libero",
+            "quantita": null,
+            "cad": "9999"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "100 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "5 cucchiaini e 1/2",
+            "cad": "3077"
+          }
+        ]
+      }
+    },
+    "settimana_2": {
+      "lunedi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n°1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Crackers non salati",
+            "quantita": "20 gr",
+            "cad": "2660"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta e ceci",
+            "quantita": null,
+            "cad": "1863",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "40 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Ceci secchi",
+                "quantita": "60 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Fesa di tacchino arrosto",
+            "quantita": "100 gr",
+            "cad": "1979"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Kiwi",
+            "quantita": "270 gr",
+            "cad": "2911"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Kiwi",
+            "quantita": "180 gr",
+            "cad": "2911"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Frittata",
+            "quantita": null,
+            "cad": "2176",
+            "composizione": [
+              {
+                "alimento": "Uovo di gallina",
+                "quantita": "n° 2",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "2 cucchiaini",
+            "cad": "3077"
+          }
+        ]
+      },
+      "martedi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n°1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+            "cad": "4208"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta con i peperoni",
+            "quantita": null,
+            "cad": "21",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "70 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Peperoni",
+                "quantita": "70 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Pere",
+            "quantita": "300 gr",
+            "cad": "2923"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Prugne",
+            "quantita": "200 gr",
+            "cad": "2927"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Salmone affumicato",
+            "quantita": "180 gr",
+            "cad": "2081"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "4 cucchiaini e 1/2",
+            "cad": "3077"
+          }
+        ]
+      },
+      "mercoledi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n°1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Crackers non salati",
+            "quantita": "20 gr",
+            "cad": "2660"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta, rucola e pomodori",
+            "quantita": null,
+            "cad": "73",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "70 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Rucola",
+                "quantita": "30 gr",
+                "cad": null
+              },
+              {
+                "alimento": "Pomodori",
+                "quantita": "40 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Banane",
+            "quantita": "200 gr",
+            "cad": "2903"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Prugne",
+            "quantita": "200 gr",
+            "cad": "2927"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Vitello magro",
+            "quantita": "220 gr",
+            "cad": "1962"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          }
+        ],
+        "nell_arco_della_giornata": [
+          {
+            "alimento": "Pane bianco",
+            "quantita": "70 gr",
+            "cad": "3507"
+          },
+          {
+            "alimento": "Olio extra vergine di oliva",
+            "quantita": "5 cucchiaini",
+            "cad": "3077"
+          }
+        ]
+      },
+      "giovedi": {
+        "colazione": [
+          {
+            "alimento": "Cappuccino (latte intero di vacca)",
+            "quantita": "n°1",
+            "cad": "4015"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Croissant semplice",
+            "quantita": "70 gr",
+            "cad": "3777"
+          }
+        ],
+        "spuntino_meta_mattina": [
+          {
+            "alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+            "cad": "4208"
+          }
+        ],
+        "pranzo": [
+          {
+            "alimento": "Pasta con il tonno sott'olio",
+            "quantita": null,
+            "cad": "30",
+            "composizione": [
+              {
+                "alimento": "Pasta di semola",
+                "quantita": "80 gr",
+                "cad": "1915"
+              },
+              {
+                "alimento": "Tonno sott'olio",
+                "quantita": "30 gr",
+                "cad": null
+              }
+            ]
+          },
+          {
+            "alimento": "Mozzarella",
+            "quantita": "90 gr",
+            "cad": "2137"
+          },
+          {
+            "alimento": "Verdure miste",
+            "quantita": "200 gr",
+            "cad": "2789"
+          },
+          {
+            "alimento": "Pesche",
+            "quantita": "350 gr",
+            "cad": "2924"
+          }
+        ],
+        "merenda": [
+          {
+            "alimento": "Caffè",
+            "quantita": "1 tazzina",
+            "cad": "4089"
+          },
+          {
+            "alimento": "Zucchero",
+            "quantita": "1 cucchiaino",
+            "cad": "3952"
+          },
+          {
+            "alimento": "Ananas",
+            "quantita": "210 gr",
+            "cad": "2900"
+          }
+        ],
+        "cena": [
+          {
+            "alimento": "Prosciutto crudo magro",
+            "quantita": "80 gr",
+            "cad": "1983"
+},
+{
+"alimento": "Verdure miste",
+"quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+"quantita": "70 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "1 cucchiaino e 1/2",
+"cad": "3077"
+}
+]
+},
+"venerdi": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n°1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+"quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Crackers non salati",
+            "quantita": "20 gr",
+"cad": "2660"
+}
+],
+"pranzo": [
+{
+"alimento": "Pasta con ricotta di vacca",
+"quantita": null,
+"cad": "43",
+"composizione": [
+{
+"alimento": "Pasta di semola",
+"quantita": "70 gr",
+"cad": "1915"
+},
+{
+"alimento": "Ricotta di vacca",
+"quantita": "40 gr",
+"cad": null
+}
+]
+},
+{
+"alimento": "Verdure miste",
+"quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Banane",
+"quantita": "200 gr",
+"cad": "2903"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Banane",
+"quantita": "100 gr",
+"cad": "2903"
+}
+],
+"cena": [
+{
+"alimento": "Orata",
+"quantita": "200 gr",
+"cad": "2043"
+},
+{
+"alimento": "Verdure miste",
+"quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "70 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "2 cucchiaini e 1/2",
+"cad": "3077"
+}
+]
+},
+"sabato": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+"quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+"cad": "4208"
+}
+],
+"pranzo": [
+{
+"alimento": "Manzo magro",
+            "quantita": "240 gr",
+"cad": "1954"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Kiwi",
+            "quantita": "90 gr",
+"cad": "2911"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Mele",
+"quantita": "150 gr",
+"cad": "2918"
+}
+],
+"cena": [
+{
+"alimento": "Pizza Margherita al piatto",
+"quantita": "210 gr",
+"cad": "1760"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "30 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "2 cucchiaini",
+"cad": "3077"
+}
+]
+},
+"domenica": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n°1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+"quantita": "70 gr",
+"cad": "3777"
+}
+],
+"pranzo": [
+{
+"alimento": "Pasto libero",
+"quantita": null,
+"cad": "9999"
+}
+],
+"cena": [
+{
+"alimento": "Verdure miste",
+"quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "100 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "4 cucchiaini e 1/2",
+"cad": "3077"
+}
+]
+}
+},
+"settimana_3": {
+"lunedi": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Crackers non salati",
+            "quantita": "20 gr",
+"cad": "2660"
+}
+],
+"pranzo": [
+{
+"alimento": "Pasta e lenticchie",
+"quantita": null,
+"cad": "1865",
+"composizione": [
+{
+"alimento": "Pasta di semola",
+                "quantita": "40 gr",
+"cad": "1915"
+},
+{
+"alimento": "Lenticchie secche",
+                "quantita": "60 gr",
+"cad": null
+}
+]
+},
+{
+"alimento": "Prosciutto crudo magro",
+            "quantita": "80 gr",
+"cad": "1983"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Mele",
+            "quantita": "300 gr",
+"cad": "2918"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Kiwi",
+            "quantita": "180 gr",
+"cad": "2911"
+}
+],
+"cena": [
+{
+"alimento": "Frittata con parmigiano",
+"quantita": null,
+"cad": "2184",
+"composizione": [
+{
+"alimento": "Uovo di gallina",
+"quantita": "n°1",
+"cad": null
+},
+{
+"alimento": "Parmigiano grattugiato",
+"quantita": "4 cucchiaini",
+"cad": "3120"
+}
+]
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "50 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "3 cucchiaini",
+"cad": "3077"
+}
+]
+},
+"martedi": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+"cad": "4208"
+}
+],
+"pranzo": [
+{
+"alimento": "Pasta con formaggio cremoso",
+"quantita": null,
+"cad": "10",
+"composizione": [
+{
+"alimento": "Pasta di semola",
+                "quantita": "70 gr",
+"cad": "1915"
+},
+{
+"alimento": "Formaggio cremoso",
+                "quantita": "40 gr",
+"cad": null
+}
+]
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Ananas",
+            "quantita": "280 gr",
+"cad": "2900"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Prugne",
+            "quantita": "200 gr",
+"cad": "2927"
+}
+],
+"cena": [
+{
+"alimento": "Tonno al naturale",
+            "quantita": "180 gr",
+"cad": "2082"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "70 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "3 cucchiaini e 1/2",
+"cad": "3077"
+}
+]
+},
+"mercoledi": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Crackers non salati",
+            "quantita": "20 gr",
+"cad": "2660"
+}
+],
+"pranzo": [
+{
+"alimento": "Riso con gli spinaci",
+"quantita": null,
+"cad": "362",
+"composizione": [
+{
+"alimento": "Riso",
+                "quantita": "70 gr",
+"cad": "1921"
+},
+{
+"alimento": "Spinaci",
+                "quantita": "40 gr",
+"cad": null
+}
+]
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Prugne",
+            "quantita": "300 gr",
+"cad": "2927"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Prugne",
+            "quantita": "200 gr",
+"cad": "2927"
+}
+],
+"cena": [
+{
+"alimento": "Petto di pollo",
+            "quantita": "210 gr",
+"cad": "1957"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "70 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "6 cucchiaini",
+"cad": "3077"
+}
+]
+},
+"giovedi": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n°1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+"cad": "4208"
+}
+],
+"pranzo": [
+{
+"alimento": "Pasta, pomodoro e parmigiano",
+"quantita": null,
+"cad": "67",
+"composizione": [
+{
+"alimento": "Pasta di semola",
+                "quantita": "80 gr",
+"cad": "1915"
+},
+{
+"alimento": "Salsa di pomodoro",
+                "quantita": "60 gr",
+"cad": null
+},
+{
+"alimento": "Parmigiano grattugiato",
+                "quantita": "10 gr",
+"cad": "3120"
+}
+]
+},
+{
+"alimento": "Ricotta di vacca",
+            "quantita": "130 gr",
+"cad": "2153"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Pesche",
+            "quantita": "350 gr",
+"cad": "2924"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Ananas",
+            "quantita": "210 gr",
+"cad": "2900"
+}
+],
+"cena": [
+{
+"alimento": "Fesa di tacchino arrosto",
+            "quantita": "150 gr",
+"cad": "1979"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "70 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "2 cucchiaini",
+"cad": "3077"
+}
+]
+},
+"venerdi": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Crackers non salati",
+            "quantita": "20 gr",
+"cad": "2660"
+}
+],
+"pranzo": [
+{
+"alimento": "Minestrone con patate e parmigiano",
+"quantita": null,
+"cad": "848",
+"composizione": [
+{
+"alimento": "Patate",
+                "quantita": "190 gr",
+"cad": null
+},
+{
+"alimento": "Verdure miste",
+                "quantita": "200 gr",
+"cad": null
+},
+{
+"alimento": "Parmigiano grattugiato",
+                "quantita": "15 gr",
+"cad": "3120"
+}
+]
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Pesche",
+            "quantita": "350 gr",
+"cad": "2924"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Banane",
+            "quantita": "100 gr",
+"cad": "2903"
+}
+],
+"cena": [
+{
+"alimento": "Salmone fresco",
+            "quantita": "180 gr",
+"cad": "2055"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "110 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "4 cucchiaini",
+"cad": "3077"
+}
+]
+},
+"sabato": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"spuntino_meta_mattina": [
+{
+"alimento": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+            "quantita": "20 gr",
+"cad": "4208"
+}
+],
+"pranzo": [
+{
+"alimento": "Maiale magro",
+            "quantita": "250 gr",
+"cad": "1953"
+},
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+},
+{
+"alimento": "Banane",
+            "quantita": "50 gr",
+"cad": "2903"
+}
+],
+"merenda": [
+{
+"alimento": "Caffè",
+"quantita": "1 tazzina",
+"cad": "4089"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Mele",
+            "quantita": "150 gr",
+"cad": "2918"
+}
+],
+"cena": [
+{
+"alimento": "Pizza Margherita al piatto",
+            "quantita": "210 gr",
+"cad": "1760"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "30 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "1 cucchiaino e 1/2",
+"cad": "3077"
+}
+]
+},
+"domenica": {
+"colazione": [
+{
+"alimento": "Cappuccino (latte intero di vacca)",
+"quantita": "n° 1",
+"cad": "4015"
+},
+{
+"alimento": "Zucchero",
+"quantita": "1 cucchiaino",
+"cad": "3952"
+},
+{
+"alimento": "Croissant semplice",
+            "quantita": "70 gr",
+"cad": "3777"
+}
+],
+"pranzo": [
+{
+"alimento": "Pasto libero",
+"quantita": null,
+"cad": "9999"
+}
+],
+"cena": [
+{
+"alimento": "Verdure miste",
+            "quantita": "200 gr",
+"cad": "2789"
+}
+],
+"nell_arco_della_giornata": [
+{
+"alimento": "Pane bianco",
+            "quantita": "100 gr",
+"cad": "3507"
+},
+{
+"alimento": "Olio extra vergine di oliva",
+"quantita": "6 cucchiaini",
+"cad": "3077"
+}
+]
+}
+}
+}
+}

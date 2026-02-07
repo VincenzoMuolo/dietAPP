@@ -1,0 +1,251 @@
+function ShoppingPage({ productList }) {
+    const [shoppingType, setShoppingType] = useState('day');
+    const [selectedWeek, setSelectedWeek] = useState(1);
+    const [selectedDay, setSelectedDay] = useState('lunedi');
+    const [startDay, setStartDay] = useState('lunedi');
+    const [endDay, setEndDay] = useState('domenica');
+    const [results, setResults] = useState(null);
+    const [checkedItems, setCheckedItems] = useState(new Set());
+    const [currentTab, setCurrentTab] = useState('todo');
+
+    const dayOptions = ['lunedi', 'martedi', 'mercoledi', 'giovedi', 'venerdi', 'sabato', 'domenica'];
+
+    const toggleItem = (itemKey) => {
+        setCheckedItems(prev => {
+            const newSet = new Set(prev);
+            if (newSet.has(itemKey)) {
+                newSet.delete(itemKey);
+            } else {
+                newSet.add(itemKey);
+            }
+            return newSet;
+        });
+    };
+
+    const shouldSkipItem = (itemName) => {
+        const lowerName = itemName.toLowerCase();
+        return (
+            lowerName.includes('pasto libero') ||
+            lowerName.includes('caffè') ||
+            lowerName.includes('cappuccino') ||
+            lowerName.includes('zucchero')
+        );
+    };
+
+    const aggregateIngredients = (foodItems) => {
+        const aggregated = {};
+
+        foodItems.forEach(item => {
+            if (shouldSkipItem(item.alimento)) {
+                return;
+            }
+
+            if (isPreparedDish(item)) {
+                item.composizione.forEach(comp => {
+                    if (shouldSkipItem(comp.alimento)) {
+                        return;
+                    }
+
+                    const compName = comp.alimento.toLowerCase();
+                    const compQuantity = parseQuantity(comp.quantita);
+
+                    if (!aggregated[compName]) {
+                        aggregated[compName] = {
+                            name: comp.alimento,
+                            quantities: {}
+                        };
+                    }
+
+                    if (compQuantity.unit) {
+                        if (!aggregated[compName].quantities[compQuantity.unit]) {
+                            aggregated[compName].quantities[compQuantity.unit] = 0;
+                        }
+                        aggregated[compName].quantities[compQuantity.unit] += compQuantity.value;
+                    }
+                });
+            } else {
+                const name = item.alimento.toLowerCase();
+                const quantity = parseQuantity(item.quantita);
+
+                if (!aggregated[name]) {
+                    aggregated[name] = {
+                        name: item.alimento,
+                        quantities: {}
+                    };
+                }
+
+                if (quantity.unit) {
+                    if (!aggregated[name].quantities[quantity.unit]) {
+                        aggregated[name].quantities[quantity.unit] = 0;
+                    }
+                    aggregated[name].quantities[quantity.unit] += quantity.value;
+                }
+            }
+        });
+
+        return Object.values(aggregated).sort((a, b) => a.name.localeCompare(b.name));
+    };
+
+    const generateShoppingList = () => {
+        let foodItems = [];
+
+        if (shoppingType === 'day') {
+            const dayData = dietData.piano_alimentare[`settimana_${selectedWeek}`][selectedDay];
+            Object.values(dayData).forEach(meals => {
+                foodItems.push(...meals);
+            });
+        } else if (shoppingType === 'range') {
+            const startIdx = dayOptions.indexOf(startDay);
+            const endIdx = dayOptions.indexOf(endDay);
+            
+            for (let i = startIdx; i <= endIdx; i++) {
+                const dayData = dietData.piano_alimentare[`settimana_${selectedWeek}`][dayOptions[i]];
+                Object.values(dayData).forEach(meals => {
+                    foodItems.push(...meals);
+                });
+            }
+        } else if (shoppingType === 'week') {
+            const weekData = dietData.piano_alimentare[`settimana_${selectedWeek}`];
+            Object.values(weekData).forEach(dayData => {
+                Object.values(dayData).forEach(meals => {
+                    foodItems.push(...meals);
+                });
+            });
+        }
+
+        const aggregated = aggregateIngredients(foodItems);
+        setResults(aggregated);
+        setCheckedItems(new Set());
+        setCurrentTab('todo');
+    };
+
+    const formatQuantities = (quantities) => {
+        return Object.entries(quantities)
+            .map(([unit, value]) => {
+                const rounded = Math.ceil(value);
+                return `${rounded} ${unit}`;
+            })
+            .join(', ');
+    };
+
+    const getFilteredItems = () => {
+        if (!results) return [];
+        return results.filter(item => {
+            const itemKey = item.name;
+            const isChecked = checkedItems.has(itemKey);
+            return currentTab === 'todo' ? !isChecked : isChecked;
+        });
+    };
+
+    const filteredItems = getFilteredItems();
+
+    return (
+        <div className="shopping-section">
+            <div className="shopping-controls glass-strong">
+                <div className="shopping-group">
+                    <label className="shopping-label">Tipo di Lista</label>
+                    <select value={shoppingType} onChange={(e) => setShoppingType(e.target.value)}>
+                        <option value="day">Giorno Singolo</option>
+                        <option value="range">Range di Giorni</option>
+                        <option value="week">Settimana Intera</option>
+                    </select>
+                </div>
+
+                <div className="shopping-group">
+                    <label className="shopping-label">Settimana</label>
+                    <select value={selectedWeek} onChange={(e) => setSelectedWeek(Number(e.target.value))}>
+                        <option value={1}>Settimana 1</option>
+                        <option value={2}>Settimana 2</option>
+                        <option value={3}>Settimana 3</option>
+                    </select>
+                </div>
+
+                {shoppingType === 'day' && (
+                    <div className="shopping-group">
+                        <label className="shopping-label">Giorno</label>
+                        <select value={selectedDay} onChange={(e) => setSelectedDay(e.target.value)}>
+                            {dayOptions.map(day => (
+                                <option key={day} value={day}>{getDayName(day)}</option>
+                            ))}
+                        </select>
+                    </div>
+                )}
+
+                {shoppingType === 'range' && (
+                    <>
+                        <div className="shopping-group">
+                            <label className="shopping-label">Da</label>
+                            <select value={startDay} onChange={(e) => setStartDay(e.target.value)}>
+                                {dayOptions.map(day => (
+                                    <option key={day} value={day}>{getDayName(day)}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <div className="shopping-group">
+                            <label className="shopping-label">A</label>
+                            <select value={endDay} onChange={(e) => setEndDay(e.target.value)}>
+                                {dayOptions.map(day => (
+                                    <option key={day} value={day}>{getDayName(day)}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </>
+                )}
+
+                <button className="shopping-btn" onClick={generateShoppingList}>
+                    Genera Lista Spesa
+                </button>
+            </div>
+
+            {results && (
+                <>
+                    <div className="shopping-tabs">
+                        <button 
+                            className={`tab-btn ${currentTab === 'todo' ? 'active' : ''}`}
+                            onClick={() => setCurrentTab('todo')}
+                        >
+                            Da Comprare ( {results.length - checkedItems.size} )
+                        </button>
+                        <button 
+                            className={`tab-btn ${currentTab === 'done' ? 'active' : ''}`}
+                            onClick={() => setCurrentTab('done')}
+                        >
+                            Preso ( {checkedItems.size} )
+                        </button>
+                    </div>
+
+                    <div className="shopping-results">
+                        {filteredItems.length === 0 ? (
+                            <div style={{textAlign: 'center', padding: '40px', color: 'var(--text-secondary)'}}>
+                                Nessun elemento {currentTab === 'todo' ? 'da comprare' : 'preso'}
+                            </div>
+                        ) : (
+                            filteredItems.map((item, idx) => {
+                                const itemKey = item.name;
+                                const isChecked = checkedItems.has(itemKey);
+                                
+                                return (
+                                    <div 
+                                        key={idx} 
+                                        className={`shopping-item glass ${isChecked ? 'checked' : ''}`}
+                                        onClick={() => toggleItem(itemKey)}
+                                    >
+                                        <div className="shopping-item-left">
+                                            <div className="checkbox">
+                                                {isChecked && <CheckIcon />}
+                                            </div>
+                                            <span className="shopping-item-name">{item.name}</span>
+                                        </div>
+                                        <span className="shopping-item-quantity">
+                                            {formatQuantities(item.quantities)}
+                                        </span>
+                                    </div>
+                                );
+                            })
+                        )}
+                    </div>
+                </>
+            )}
+        </div>
+    );
+}

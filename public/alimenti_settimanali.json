@@ -1,0 +1,137 @@
+{
+  "settimana_1": {
+    "primi": [
+      { "alimento": "fagioli secchi", "quantita_g": 60, "giorno": "lunedi" },
+      { "alimento": "pasta di semola", "quantita_g": 180, "giorno": ["lunedi", "martedi", "giovedi"] },
+      { "alimento": "pizza margherita", "quantita_g": 210, "giorno": "sabato" },
+      { "alimento": "riso", "quantita_g": 150, "giorno": ["mercoledi", "venerdi"] }
+    ],
+    "secondi": [
+      { "alimento": "bresaola", "quantita_g": 100, "giorno": "giovedi" },
+      { "alimento": "fesa di tacchino arrosto", "quantita_g": 100, "giorno": "lunedi" },
+      { "alimento": "formaggio cremoso light", "quantita_g": 120, "giorno": "giovedi" },
+      { "alimento": "frutti di mare", "quantita_g": 30, "giorno": "giovedi" },
+      { "alimento": "manzo magro", "quantita_g": 230, "giorno": "mercoledi" },
+      { "alimento": "mozzarella", "quantita_g": 50, "giorno": "martedi" },
+      { "alimento": "petto di pollo", "quantita_g": 220, "giorno": "sabato" },
+      { "alimento": "spigola", "quantita_g": 240, "giorno": "venerdi" },
+      { "alimento": "tonno al naturale", "quantita_g": 150, "giorno": "martedi" },
+      { "alimento": "uova", "quantita_n": 1, "giorno": "lunedi" }
+    ],
+    "contorni": [
+      { "alimento": "funghi", "quantita_g": 40, "giorno": "venerdi" },
+      { "alimento": "piselli freschi", "quantita_g": 30, "giorno": "mercoledi" },
+      { "alimento": "pomodori", "quantita_g": 70, "giorno": "martedi" },
+      { "alimento": "verdure miste", "quantita_g": 2400, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] }
+    ],
+    "frutta": [
+      { "alimento": "ananas", "quantita_g": 210, "giorno": "giovedi" },
+      { "alimento": "banane", "quantita_g": 550, "giorno": ["lunedi", "giovedi", "venerdi", "sabato"] },
+      { "alimento": "kiwi", "quantita_g": 180, "giorno": "lunedi" },
+      { "alimento": "mele", "quantita_g": 150, "giorno": "sabato" },
+      { "alimento": "pere", "quantita_g": 600, "giorno": ["mercoledi", "venerdi"] },
+      { "alimento": "prugne", "quantita_g": 700, "giorno": ["martedi", "mercoledi"] }
+    ],
+    "extra": [
+      { "alimento": "barretta cereali integrali", "quantita_g": 60, "giorno": ["martedi", "giovedi", "sabato"] },
+      { "alimento": "caffe", "quantita_tazzine": 6, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato"] },
+      { "alimento": "cappuccino", "quantita_n": 7, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "crackers non salati", "quantita_g": 60, "giorno": ["lunedi", "mercoledi", "venerdi"] },
+      { "alimento": "croissant semplice", "quantita_g": 490, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "olio extravergine di oliva", "quantita_g": 106, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "pane bianco", "quantita_g": 470, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "parmigiano grattugiato", "quantita_g": 30, "giorno": ["lunedi", "venerdi"] },
+      { "alimento": "zucchero", "quantita_g": 65, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] }
+    ]
+  },
+
+  "settimana_2": {
+    "primi": [
+      { "alimento": "ceci secchi", "quantita_g": 60, "giorno": "lunedi" },
+      { "alimento": "pasta di semola", "quantita_g": 330, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi"] },
+      { "alimento": "pizza margherita", "quantita_g": 210, "giorno": "sabato" }
+    ],
+    "secondi": [
+      { "alimento": "fesa di tacchino arrosto", "quantita_g": 100, "giorno": "lunedi" },
+      { "alimento": "manzo magro", "quantita_g": 240, "giorno": "sabato" },
+      { "alimento": "mozzarella", "quantita_g": 90, "giorno": "giovedi" },
+      { "alimento": "orata", "quantita_g": 200, "giorno": "venerdi" },
+      { "alimento": "prosciutto crudo magro", "quantita_g": 80, "giorno": "giovedi" },
+      { "alimento": "ricotta di vacca", "quantita_g": 40, "giorno": "venerdi" },
+      { "alimento": "salmone affumicato", "quantita_g": 180, "giorno": "martedi" },
+      { "alimento": "tonno sottolio", "quantita_g": 30, "giorno": "giovedi" },
+      { "alimento": "uova", "quantita_n": 2, "giorno": "lunedi" },
+      { "alimento": "vitello magro", "quantita_g": 220, "giorno": "mercoledi" }
+    ],
+    "contorni": [
+      { "alimento": "peperoni", "quantita_g": 70, "giorno": "martedi" },
+      { "alimento": "pomodori", "quantita_g": 40, "giorno": "mercoledi" },
+      { "alimento": "rucola", "quantita_g": 30, "giorno": "mercoledi" },
+      { "alimento": "verdure miste", "quantita_g": 2400, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] }
+    ],
+    "frutta": [
+      { "alimento": "ananas", "quantita_g": 210, "giorno": "giovedi" },
+      { "alimento": "banane", "quantita_g": 500, "giorno": ["mercoledi", "venerdi"] },
+      { "alimento": "kiwi", "quantita_g": 540, "giorno": ["lunedi", "sabato"] },
+      { "alimento": "mele", "quantita_g": 150, "giorno": "sabato" },
+      { "alimento": "pere", "quantita_g": 300, "giorno": "martedi" },
+      { "alimento": "pesche", "quantita_g": 350, "giorno": "giovedi" },
+      { "alimento": "prugne", "quantita_g": 400, "giorno": ["martedi", "mercoledi"] }
+    ],
+    "extra": [
+      { "alimento": "barretta cereali integrali", "quantita_g": 60, "giorno": ["martedi", "giovedi", "sabato"] },
+      { "alimento": "caffe", "quantita_tazzine": 6, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato"] },
+      { "alimento": "cappuccino", "quantita_n": 7, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "crackers non salati", "quantita_g": 60, "giorno": ["lunedi", "mercoledi", "venerdi"] },
+      { "alimento": "croissant semplice", "quantita_g": 490, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "olio extravergine di oliva", "quantita_g": 88, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "pane bianco", "quantita_g": 480, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "zucchero", "quantita_g": 65, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] }
+    ]
+  },
+
+  "settimana_3": {
+    "primi": [
+      { "alimento": "lenticchie secche", "quantita_g": 60, "giorno": "lunedi" },
+      { "alimento": "pasta di semola", "quantita_g": 190, "giorno": ["lunedi", "martedi", "giovedi"] },
+      { "alimento": "pizza margherita", "quantita_g": 210, "giorno": "sabato" },
+      { "alimento": "riso", "quantita_g": 70, "giorno": "mercoledi" }
+    ],
+    "secondi": [
+      { "alimento": "fesa di tacchino arrosto", "quantita_g": 150, "giorno": "giovedi" },
+      { "alimento": "formaggio cremoso", "quantita_g": 40, "giorno": "martedi" },
+      { "alimento": "maiale magro", "quantita_g": 250, "giorno": "sabato" },
+      { "alimento": "petto di pollo", "quantita_g": 210, "giorno": "mercoledi" },
+      { "alimento": "prosciutto crudo magro", "quantita_g": 80, "giorno": "lunedi" },
+      { "alimento": "ricotta di vacca", "quantita_g": 130, "giorno": "giovedi" },
+      { "alimento": "salmone fresco", "quantita_g": 180, "giorno": "venerdi" },
+      { "alimento": "tonno al naturale", "quantita_g": 180, "giorno": "martedi" },
+      { "alimento": "uova", "quantita_n": 1, "giorno": ["lunedi", "mercoledi"] }
+    ],
+    "contorni": [
+      { "alimento": "patate", "quantita_g": 190, "giorno": "venerdi" },
+      { "alimento": "spinaci", "quantita_g": 40, "giorno": "mercoledi" },
+      { "alimento": "verdure miste", "quantita_g": 2600, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] }
+    ],
+    "frutta": [
+      { "alimento": "ananas", "quantita_g": 490, "giorno": ["martedi", "giovedi"] },
+      { "alimento": "banane", "quantita_g": 150, "giorno": ["venerdi", "sabato"] },
+      { "alimento": "kiwi", "quantita_g": 180, "giorno": "lunedi" },
+      { "alimento": "mele", "quantita_g": 450, "giorno": ["lunedi", "sabato"] },
+      { "alimento": "pesche", "quantita_g": 700, "giorno": ["giovedi", "venerdi"] },
+      { "alimento": "prugne", "quantita_g": 700, "giorno": ["martedi", "mercoledi"] }
+    ],
+    "extra": [
+      { "alimento": "barretta cereali integrali", "quantita_g": 60, "giorno": ["martedi", "giovedi", "sabato"] },
+      { "alimento": "caffe", "quantita_tazzine": 6, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato"] },
+      { "alimento": "cappuccino", "quantita_n": 7, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "crackers non salati", "quantita_g": 60, "giorno": ["lunedi", "mercoledi", "venerdi"] },
+      { "alimento": "croissant semplice", "quantita_g": 490, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "olio extravergine di oliva", "quantita_g": 90, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "pane bianco", "quantita_g": 500, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] },
+      { "alimento": "parmigiano grattugiato", "quantita_g": 45, "giorno": ["lunedi", "giovedi", "venerdi"] },
+      { "alimento": "salsa di pomodoro", "quantita_g": 60, "giorno": "giovedi" },
+      { "alimento": "zucchero", "quantita_g": 65, "giorno": ["lunedi", "martedi", "mercoledi", "giovedi", "venerdi", "sabato", "domenica"] }
+    ]
+  }
+}

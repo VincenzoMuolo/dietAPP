@@ -1,0 +1,1180 @@
+{
+  "codici_alimentari": [
+    {
+      "codice": "CAD:10",
+      "nome": "PASTA CON FORMAGGIO CREMOSO",
+      "categoria": "Primi",
+      "descrizione": "Scelga il tipo di formaggio cremoso che preferisce tra quelli disponibili in commercio. Prepari la quantità di pasta prescritta e, terminata la cottura, aggiunga il formaggio cremoso mescolando bene il tutto.",
+      "ricetta_base": {
+        "nome": "Pasta con formaggio cremoso",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+          {"nome": "Formaggio cremoso", "quantita": 40, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta, pomodori e mozzarella",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Pomodori", "quantita": 70, "unita": "gr"},
+            {"nome": "Mozzarella", "quantita": 50, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta con il pesto",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 60, "unita": "gr"},
+            {"nome": "Basilico", "quantita": 10, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"},
+            {"nome": "Pecorino grattugiato", "quantita": 5, "unita": "gr"},
+            {"nome": "Pinoli", "quantita": 5, "unita": "gr"},
+            {"nome": "Olio extra vergine di oliva", "quantita": 2, "unita": "cucchiaini"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:19",
+      "nome": "PASTA CON I FRUTTI DI MARE",
+      "categoria": "Primi",
+      "descrizione": "Può acquistare cozze, vongole e calamari nelle quantità prescritte, freschi o surgelati, già puliti e pronti per la cottura. Metta i frutti di mare in un tegame con aromi di suo gradimento e dell'acqua tiepida e li faccia cuocere lentamente; può utilizzare parte del condimento assegnato durante la cottura oppure aggiungerlo a crudo. Prepari, infine, la quantità prescritta di pasta e unisca i frutti di mare.",
+      "ricetta_base": {
+        "nome": "Pasta con i frutti di mare",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+          {"nome": "Frutti di mare", "quantita": 30, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta con le vongole",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Vongole", "quantita": 30, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta con i peperoni",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Peperoni", "quantita": 70, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:21",
+      "nome": "PASTA CON I PEPERONI",
+      "categoria": "Primi",
+      "descrizione": "Scelga peperoni sodi, con polpa spessa, evitando quelli con pelle sottile e macchiata. Li cucini al forno o ai ferri, elimini la pelle, li tagli a fettine sottili, li passi in padella con parte del condimento assegnato e aromi di suo gradimento. Cucini la quantità prescritta di pasta e unisca il condimento preparato.",
+      "ricetta_base": {
+        "nome": "Pasta con i peperoni",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+          {"nome": "Peperoni", "quantita": 70, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta, rucola e pomodori",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Rucola", "quantita": 30, "unita": "gr"},
+            {"nome": "Pomodori", "quantita": 40, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta con i funghi",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Funghi", "quantita": 40, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:30",
+      "nome": "PASTA CON IL TONNO SOTT'OLIO",
+      "categoria": "Primi",
+      "descrizione": "Acquisti il tonno sott'olio preferendo il tipo confezionato in olio di oliva. Elimini l'olio di conservazione e controlli che il prodotto abbia un colore rosato uniforme senza macchie scure. Lo faccia insaporire in padella con parte del condimento disponibile e aromi di suo gradimento. Cucini la quantità di pasta prescritta, aggiunga il condimento preparato e mescoli il tutto.",
+      "ricetta_base": {
+        "nome": "Pasta con il tonno sott'olio",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 80, "unita": "gr"},
+          {"nome": "Tonno sott'olio", "quantita": 30, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta, melanzane e parmigiano",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 80, "unita": "gr"},
+            {"nome": "Melanzane", "quantita": 40, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta, funghi e parmigiano",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 80, "unita": "gr"},
+            {"nome": "Funghi", "quantita": 40, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:43",
+      "nome": "PASTA CON RICOTTA DI VACCA",
+      "categoria": "Primi",
+      "descrizione": "Scelga il tipo di ricotta di vacca che preferisce tra i vari disponibili in commercio, evitando quelle stagionate o salate. Prepari la quantità di pasta prescritta e, terminata la cottura, aggiunga la ricotta e mescoli bene il tutto.",
+      "ricetta_base": {
+        "nome": "Pasta con ricotta di vacca",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+          {"nome": "Ricotta di vacca", "quantita": 40, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta, pomodoro e parmigiano",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Salsa di pomodoro", "quantita": 50, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta, peperoni e parmigiano",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Peperoni", "quantita": 70, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:63",
+      "nome": "PASTA, POMODORI E MOZZARELLA",
+      "categoria": "Primi",
+      "descrizione": "Scelga pomodori di colore rosso intenso con una buona consistenza e che non presentino nervature biancastre. Li lavi accuratamente con acqua e bicarbonato di sodio e li tagli a pezzettini. La mozzarella, se fresca, deve avere una consistenza morbida, una superficie liscia e brillante ed un colore bianco omogeneo. La tagli a dadini e la aggiunga al pomodoro. Prepari la quantità indicata di pasta, la scoli quando è ancora al dente e la lasci raffreddare in una insalatiera; aggiunga, infine, il pomodoro, la mozzarella e parte del condimento assegnato, mescolando bene il tutto.",
+      "ricetta_base": {
+        "nome": "Pasta, pomodori e mozzarella",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+          {"nome": "Pomodori", "quantita": 70, "unita": "gr"},
+          {"nome": "Mozzarella", "quantita": 50, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta con formaggio cremoso",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Formaggio cremoso", "quantita": 40, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta con formaggio cremoso light",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 90, "unita": "gr"},
+            {"nome": "Formaggio cremoso light", "quantita": 40, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:67",
+      "nome": "PASTA, POMODORO E PARMIGIANO",
+      "categoria": "Primi",
+      "descrizione": "Per la salsa può utilizzare pomodori freschi o pelati; li cucini in padella a fuoco moderato e aggiunga aromi di suo gradimento. Può usare parte del condimento disponibile per cucinare la salsa di pomodoro o aggiungerlo a cottura ultimata. Prepari la quantità di pasta prescritta, unisca la salsa di pomodoro ormai pronta e il parmigiano assegnato.",
+      "ricetta_base": {
+        "nome": "Pasta, pomodoro e parmigiano",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 80, "unita": "gr"},
+          {"nome": "Salsa di pomodoro", "quantita": 60, "unita": "gr"},
+          {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta, rucola, pomodori e parmigiano",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Rucola", "quantita": 30, "unita": "gr"},
+            {"nome": "Pomodori", "quantita": 40, "unita": "gr"},
+            {"nome": "Parmigiano", "quantita": 15, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta, peperoni e parmigiano",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 80, "unita": "gr"},
+            {"nome": "Peperoni", "quantita": 80, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:73",
+      "nome": "PASTA, RUCOLA E POMODORI",
+      "categoria": "Primi",
+      "descrizione": "Scelga pomodori di colore rosso intenso con una buona consistenza, privi di nervature biancastre; nell'acquistare la rucola controlli che le foglie siano di un bel colore verde scuro, senza parti gialle e avvizzite. Lavi accuratamente pomodori e rucola e li tagli a pezzettini in un'insalatiera. Prepari la quantità indicata di pasta, la scoli quando è ancora al dente e la lasci raffreddare; aggiunga il pomodoro, la rucola e parte del condimento assegnato, mescolando bene il tutto.",
+      "ricetta_base": {
+        "nome": "Pasta, rucola e pomodori",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+          {"nome": "Rucola", "quantita": 30, "unita": "gr"},
+          {"nome": "Pomodori", "quantita": 40, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta con i peperoni",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Peperoni", "quantita": 70, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta con i funghi",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 70, "unita": "gr"},
+            {"nome": "Funghi", "quantita": 40, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:362",
+      "nome": "RISO CON GLI SPINACI",
+      "categoria": "Primi",
+      "descrizione": "Può acquistare sia gli spinaci surgelati che quelli freschi, ma nel secondo caso, controlli che abbiano foglie turgide, prive di ammaccature e siano di un bel colore verde scuro. Dopo averli lavati con cura, può lessarli oppure tritarli finemente e cuocerli in padella con parte del condimento disponibile. Prepari la quantità prescritta di riso, aggiunga gli spinaci e mescolando porti a termine la preparazione.",
+      "ricetta_base": {
+        "nome": "Riso con gli spinaci",
+        "ingredienti": [
+          {"nome": "Riso", "quantita": 70, "unita": "gr"},
+          {"nome": "Spinaci", "quantita": 40, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Riso con i funghi",
+          "ingredienti": [
+            {"nome": "Riso", "quantita": 70, "unita": "gr"},
+            {"nome": "Funghi", "quantita": 40, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Riso con i piselli",
+          "ingredienti": [
+            {"nome": "Riso", "quantita": 70, "unita": "gr"},
+            {"nome": "Piselli freschi", "quantita": 30, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:369",
+      "nome": "RISO CON I PISELLI",
+      "categoria": "Primi",
+      "descrizione": "Potrà utilizzare sia i piselli freschi che surgelati, ma non quelli in scatola. Li passi in padella e li lasci cuocere per circa venti minuti in acqua con aromi di suo gradimento; può usare parte del condimento assegnato durante la cottura o aggiungerlo a crudo. Prepari il riso secondo la quantità indicata, lo scoli prima che la cottura sia ultimata e unisca i piselli; mescoli bene il tutto e porti a termine la cottura.",
+      "ricetta_base": {
+        "nome": "Riso con i piselli",
+        "ingredienti": [
+          {"nome": "Riso", "quantita": 70, "unita": "gr"},
+          {"nome": "Piselli freschi", "quantita": 30, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Riso con gli spinaci",
+          "ingredienti": [
+            {"nome": "Riso", "quantita": 70, "unita": "gr"},
+            {"nome": "Spinaci", "quantita": 40, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Riso con i funghi",
+          "ingredienti": [
+            {"nome": "Riso", "quantita": 70, "unita": "gr"},
+            {"nome": "Funghi", "quantita": 40, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:401",
+      "nome": "RISO, FUNGHI E PARMIGIANO",
+      "categoria": "Primi",
+      "descrizione": "In commercio può reperire sia i funghi freschi che surgelati, già puliti e pronti per la cottura; se li acquista freschi, li scelga a polpa soda ed elimini le parti terrose e quelle eventualmente alterate, raschiando con la lama di un coltello la testa e i gambi. Tagli i funghi a fettine sottili e li passi in padella con parte del condimento assegnato, con aromi di suo gradimento. Prepari la quantità prescritta di riso, lo scoli prima che la cottura sia ultimata e unisca i funghi; mescoli bene il tutto e porti a termine la cottura. Aggiunga infine il parmigiano assegnato.",
+      "ricetta_base": {
+        "nome": "Riso, funghi e parmigiano",
+        "ingredienti": [
+          {"nome": "Riso", "quantita": 80, "unita": "gr"},
+          {"nome": "Funghi", "quantita": 40, "unita": "gr"},
+          {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Riso, spinaci e parmigiano",
+          "ingredienti": [
+            {"nome": "Riso", "quantita": 80, "unita": "gr"},
+            {"nome": "Spinaci", "quantita": 40, "unita": "gr"},
+            {"nome": "Parmigiano grattugiato", "quantita": 10, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Riso con i frutti di mare",
+          "ingredienti": [
+            {"nome": "Riso", "quantita": 210, "unita": "gr"},
+            {"nome": "Frutti di mare", "quantita": 30, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:848",
+      "nome": "MINESTRONE CON PATATE E PARMIGIANO",
+      "categoria": "Primi",
+      "descrizione": "Scelga verdure e ortaggi tra quelli presenti nel suo piano alimentare, escludendo i legumi; se lo desidera, può acquistare il minestrone già pronto, confezionato e surgelato, purché i vegetali utilizzati corrispondano a quelli da me consentiti. Aggiunga le patate secondo la quantità indicata e cucini il misto di verdure ed ortaggi a pezzetti in acqua leggermente salata, mescolando di tanto in tanto. Può utilizzare parte del condimento disponibile durante la preparazione del minestrone o condire a crudo. A preparazione ultimata aggiunga il parmigiano assegnato.",
+      "ricetta_base": {
+        "nome": "Minestrone con patate e parmigiano",
+        "ingredienti": [
+          {"nome": "Patate", "quantita": 190, "unita": "gr"},
+          {"nome": "Verdure miste", "quantita": 200, "unita": "gr"},
+          {"nome": "Parmigiano grattugiato", "quantita": 15, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Minestrone con patate",
+          "ingredienti": [
+            {"nome": "Patate", "quantita": 250, "unita": "gr"},
+            {"nome": "Verdure miste", "quantita": 200, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:1760",
+      "nome": "PIZZA MARGHERITA AL PIATTO",
+      "categoria": "Primi",
+      "descrizione": "Può scegliere se acquistare la pizza già pronta, mangiarla in pizzeria oppure prepararla in casa. In quest'ultimo caso, utilizzi per l'impasto la farina tipo \"0\", un pizzico di sale e lievito di birra precedentemente sciolto in acqua tiepida. Impasti energicamente fino a quando l'impasto diventa omogeneo e lo disponga in un luogo tiepido fino al raddoppio del volume. Poi riprenda la pasta, la lavori ancora per qualche minuto e la stenda su di una teglia da forno antiaderente. Aggiunga sopra la salsa di pomodoro, la mozzarella tagliata a pezzettini, parte del condimento assegnato e spezie di suo gradimento. Cucini la pizza in forno già caldo a 250° centigradi per circa venti minuti. Il peso indicato si riferisce all'alimento dopo la cottura.",
+      "ricetta_base": {
+        "nome": "Pizza margherita al piatto",
+        "ingredienti": []
+      },
+      "alternative": []
+    },
+    {
+      "codice": "CAD:1863",
+      "nome": "PASTA E CECI",
+      "categoria": "Primi",
+      "descrizione": "Lavi i ceci e li lasci in ammollo per circa otto ore; può lessarli aggiungendo aromi di suo gradimento. Per ridurre i tempi di cottura può utilizzare una pentola a pressione. Faccia cuocere la quantità prescritta di pasta, la scoli prima del termine di cottura indicato, la unisca ai ceci con parte del condimento assegnato e mescolando porti a termine la preparazione.",
+      "ricetta_base": {
+        "nome": "Pasta e ceci",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+          {"nome": "Ceci secchi", "quantita": 60, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta e lenticchie",
+
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+            {"nome": "Lenticchie secche", "quantita": 60, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:1864",
+      "nome": "PASTA E FAGIOLI",
+      "categoria": "Primi",
+      "descrizione": "Scelga il tipo di fagioli che preferisce tra le numerose varietà disponibili in commercio, li lavi e li lasci in ammollo per circa dodici ore; può lessarli aggiungendo aromi di suo gradimento. Per ridurre i tempi di cottura può utilizzare una pentola a pressione. Faccia cuocere la quantità prescritta di pasta, la scoli prima del termine di cottura indicato, la unisca ai fagioli con parte del condimento assegnato e mescolando porti a termine la preparazione.",
+      "ricetta_base": {
+        "nome": "Pasta e fagioli",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+          {"nome": "Fagioli secchi", "quantita": 60, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta e lenticchie",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+            {"nome": "Lenticchie secche", "quantita": 60, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:1865",
+      "nome": "PASTA E LENTICCHIE",
+      "categoria": "Primi",
+      "descrizione": "Scelga il tipo di lenticchie che preferisce tra quelle disponibili in commercio; le lavi e le lasci in ammollo per alcune ore; può lessarle aggiungendo aromi di suo gradimento. Per ridurre i tempi di cottura può utilizzare una pentola a pressione. Faccia cuocere la quantità prescritta di pasta, la scoli prima del termine di cottura indicato, la unisca alle lenticchie con parte del condimento assegnato e mescolando porti a termine la preparazione.",
+      "ricetta_base": {
+        "nome": "Pasta e lenticchie",
+        "ingredienti": [
+          {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+          {"nome": "Lenticchie secche", "quantita": 60, "unita": "gr"}
+        ]
+      },
+      "alternative": [
+        {
+          "nome": "Pasta e fagioli",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+            {"nome": "Fagioli secchi", "quantita": 60, "unita": "gr"}
+          ]
+        },
+        {
+          "nome": "Pasta e ceci",
+          "ingredienti": [
+            {"nome": "Pasta di semola", "quantita": 40, "unita": "gr"},
+            {"nome": "Ceci secchi", "quantita": 60, "unita": "gr"}
+          ]
+        }
+      ]
+    },
+    {
+      "codice": "CAD:1915",
+      "nome": "PASTA DI SEMOLA",
+      "categoria": "Ingredienti Base",
+      "descrizione": "Ci si riferisce alla pasta prodotta a partire da grano duro, disponibile in commercio in varie forme, dimensioni e confezioni; da non confondere con la pasta fresca o all'uovo. Al momento del consumo, la pasta deve essere al dente e conservare un po' del suo colore paglierino; ricordi, inoltre, che dal momento in cui viene tolta dal fuoco fino a quando viene servita, la pasta continua a cuocere. Se cucina per più persone, preferisca un tipo di \"pasta corta\" in modo che, prima della cottura, pesando la sua porzione potrà facilmente contare il numero di \"pezzi\" corrispondente. In questo modo, a cottura ultimata, potrà risalire alle rispettive quantità semplicemente contando i \"pezzi\". Dovrà ripetere l'operazione se utilizza diversi tipi e marche di pasta.",
+      "ricetta_base": {
+        "nome": "Pasta di semola",
+        "ingredienti": []
+      },
+      "alternative": []
+    },
+    {
+      "codice": "CAD:1921",
+      "nome": "RISO",
+      "categoria": "Ingredienti Base",
+      "descrizione": "Ne esistono numerose varietà, \"comune\", \"semifino\", \"fino\" e \"superfino\", diverse per la forma e la dimensione dei grani e i tempi di cottura richiesti. Il riso \"parboiled\", grazie al tipo di trattamento al vapore a cui è sottoposto durante la lavorazione, conserva più degli altri le proprietà nutritive e, inoltre, essendo più resistente alla cottura, rimane al dente. Scelga il tipo che preferisce e lo conservi in un luogo fresco e asciutto, lontano da alimenti dai forti odori. Al momento del consumo, ricordi che il riso deve essere al dente e che dal momento in cui viene tolto dal fuoco fino a quando viene servito, continua a cuocere.",
+      "ricetta_base": {
+        "nome": "Riso",
+        "ingredienti": []
+      },
+      "alternative": []
+    },
+    {
+      "codice": "CAD:1953",
+      "nome": "MAIALE MAGRO",
+      "categoria": "Secondi",
+      "descrizione": "È l'arista o lombata, la parte più magra e tenera del maiale. Si consiglia di cuocerla al forno o ai ferri, aggiungendo parte del condimento che le è stato assegnato preferibilmente dopo la cottura. La carne di maiale deve essere ben cotta e per renderla più saporita può aggiungere degli aromi di suo gradimento prima della cottura.",
+      "ricetta_base": {
+        "nome": "Maiale magro",
+        "ingredienti": [
+            {"nome": "Maiale magro", "quantita": 250, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Petto di tacchino",
+      "ingredienti": [
+        {"nome": "Petto di tacchino", "quantita": 300, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Manzo magro",
+      "ingredienti": [
+        {"nome": "Manzo magro", "quantita": 270, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:1954",
+  "nome": "MANZO MAGRO",
+  "categoria": "Secondi",
+  "descrizione": "È la carne di bovino adulto, la cui tenerezza è il risultato di un'adeguata frollatura e conservazione in frigorifero. Può cuocerla ai ferri, al forno o in padella, meglio se antiaderente; aggiunga parte del condimento assegnato, preferibilmente a fine cottura e, se lo gradisce, del succo di limone. Eventualmente, può tritare la carne e preparare un hamburger.",
+  "ricetta_base": {
+    "nome": "Manzo magro",
+    "ingredienti": [
+      {"nome": "Manzo magro", "quantita": 230, "unita": "gr"},
+      {"nome": "Manzo magro", "quantita": 240, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Petto di tacchino",
+      "ingredienti": [
+        {"nome": "Petto di tacchino", "quantita": 260, "unita": "gr"},
+        {"nome": "Petto di tacchino", "quantita": 270, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Maiale magro",
+      "ingredienti": [
+        {"nome": "Maiale magro", "quantita": 210, "unita": "gr"},
+        {"nome": "Maiale magro", "quantita": 220, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:1957",
+  "nome": "PETTO DI POLLO",
+  "categoria": "Secondi",
+  "descrizione": "L'aspetto è importante per distinguere i polli ruspanti, che hanno la carne di un colore giallo-rosato scuro, da quelli di allevamento, che hanno un colorito più chiaro. Può lessarlo, cuocerlo al forno o in padella, utilizzando parte del condimento che le è stato assegnato preferibilmente a cottura ultimata e, se lo gradisce, del succo di limone. Si raccomanda l'uso di padelle antiaderenti che consentono di ottenere una buona doratura della carne anche con poco condimento.",
+  "ricetta_base": {
+    "nome": "Petto di pollo",
+    "ingredienti": []
+  },
+  "alternative": [
+    {
+      "nome": "Hamburger di pollo",
+      "ingredienti": []
+    },
+    {
+      "nome": "Maiale magro",
+      "ingredienti": []
+    }
+  ]
+},
+{
+  "codice": "CAD:1962",
+  "nome": "VITELLO MAGRO",
+  "categoria": "Secondi",
+  "descrizione": "È il bovino di età inferiore ai dodici mesi; si differenzia dal bovino adulto per le Secondi più tenere e digeribili e per il colore più chiaro. Si consiglia di cuocerlo lentamente in padella o ai ferri; eviti di cucinarlo alla brace in quanto la carne si asciugherebbe in modo eccessivo risultando meno gradevole. Utilizzi parte del condimento assegnato preferibilmente dopo la cottura e, se lo gradisce, aggiunga una piccola quantità di succo di limone.",
+  "ricetta_base": {
+    "nome": "Vitello magro",
+    "ingredienti": [
+      {"nome": "Vitello magro", "quantita": 220, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Manzo magro",
+      "ingredienti": [
+        {"nome": "Manzo magro", "quantita": 200, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Petto di tacchino",
+      "ingredienti": [
+        {"nome": "Petto di tacchino", "quantita": 220, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:1974",
+  "nome": "BRESAOLA",
+  "categoria": "Secondi",
+  "descrizione": "È ottenuta dalla stagionatura della carne bovina salata ed è caratterizzata dal sapore dolce e dal profumo delicato. Al momento dell'acquisto, deve presentare un aspetto compatto, un colore rosso scuro brillante e uniforme. Si consiglia di acquistare la bresaola nella quantità prescritta e di conservarla in frigorifero lontana da forti odori, ad una temperatura compresa tra 2° e 4° centigradi; la consumi entro ventiquattro ore dall'acquisto o dall'apertura della confezione, nel caso del prodotto sottovuoto o in atmosfera protettiva. Può consumarla al naturale o con l'aggiunta di parte del condimento assegnato, un po' di rucola tritata e, se lo gradisce, del succo di limone.",
+  "ricetta_base": {
+    "nome": "Bresaola",
+    "ingredienti": []
+  },
+  "alternative": []
+},
+{
+  "codice": "CAD:1979",
+  "nome": "FESA DI TACCHINO ARROSTO",
+  "categoria": "Secondi",
+  "descrizione": "Scelga il tipo che preferisce tra i vari disponibili in commercio. Si consiglia di acquistare la fesa di tacchino arrosto nella quantità prescritta e di conservarla in frigorifero ad una temperatura compresa tra 2° e 4° centigradi. La consumi entro ventiquattro ore dall'acquisto; nel caso del prodotto confezionato, una volta aperta la confezione, lo riponga lontano da cibi che emanano forti odori e lo consumi comunque entro ventiquattro ore.",
+  "ricetta_base": {
+    "nome": "Fesa di tacchino arrosto",
+    "ingredienti": []
+  },
+  "alternative": []
+},
+{
+  "codice": "CAD:1983",
+  "nome": "PROSCIUTTO CRUDO MAGRO",
+  "categoria": "Secondi",
+  "descrizione": "Scelga un prosciutto stagionato e preferisca il tipo dolce a quello salato; prima di assumerlo, elimini con cura tutto il grasso visibile. Si consiglia di acquistare il prosciutto nella quantità prescritta e tagliato a fettine sottili; lo conservi in frigorifero ad una temperatura compresa tra 2° e 4° centigradi, lontano da forti odori. Consumi il prosciutto entro ventiquattro ore dall'acquisto o dall'apertura della confezione, nel caso del prodotto sottovuoto o in atmosfera protettiva.",
+  "ricetta_base": {
+    "nome": "Prosciutto crudo magro",
+    "ingredienti": [
+      {"nome": "Prosciutto crudo magro", "quantita": 80, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Bresaola",
+      "ingredienti": [
+        {"nome": "Bresaola", "quantita": 80, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Fesa di tacchino arrosto",
+      "ingredienti": [
+        {"nome": "Fesa di tacchino arrosto", "quantita": 100, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2043",
+  "nome": "ORATA",
+  "categoria": "Secondi",
+  "descrizione": "Pesce marino caratterizzato da una banda dorata tra gli occhi, da cui deriva il nome; è reperibile in commercio sia fresca che surgelata. Se molto grande e appena pescata, si consiglia di frollarla in frigorifero per ventiquattro ore prima di consumarla. Dopo aver eliminato la testa, la coda e le interiora, pesi il pesce e aggiunga il 15% alla quantità prescritta per la lisca. Può cuocerla al forno, ai ferri o in padella aggiungendo parte del condimento assegnato e, se lo gradisce, del succo di limone.",
+  "ricetta_base": {
+    "nome": "Orata",
+    "ingredienti": [
+      {"nome": "Orata", "quantita": 200, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Spigola",
+      "ingredienti": [
+        {"nome": "Spigola", "quantita": 240, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Gamberi",
+      "ingredienti": [
+        {"nome": "Gamberi", "quantita": 330, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2055",
+  "nome": "SALMONE FRESCO",
+  "categoria": "Secondi",
+  "descrizione": "Tra le varie specie esistenti, la più pregiata è quella dell'Atlantico. Può reperire il salmone fresco o congelato, in tranci o in filetti, escludendo, ovviamente, quello inscatolato e quello affumicato. In commercio si trova soprattutto il tipo d'allevamento. Se fresco, dopo averlo lavato e asciugato, lo conservi in frigorifero avvolto in carta da forno per non più di ventiquattro ore dall'acquisto; se congelato, lo mantenga in freezer fino al momento del consumo. Può lessarlo, cuocerlo al forno o alla griglia, aggiungendo parte del condimento assegnato e, se lo gradisce, un po' di succo di limone.",
+  "ricetta_base": {
+    "nome": "Salmone fresco",
+    "ingredienti": []
+  },
+  "alternative": [
+    {
+      "nome": "Spigola",
+      "ingredienti": []
+    }
+  ]
+},
+{
+  "codice": "CAD:2061",
+  "nome": "SPIGOLA",
+  "categoria": "Secondi",
+  "descrizione": "Denominata anche \"branzino\", è caratterizzata dalla colorazione grigia del dorso e dei fianchi e dal colore argenteo del ventre. Se fresca, deve avere un aspetto generale brillante, l'addome integro e l'occhio in rilievo. Può acquistare la spigola di allevamento o, se reperibile, quella selvatica. Dopo averla lavata attentamente, raschi con un coltello da cucina il dorso per eliminare le squame e la privi di testa, pinne e interiora; pesi la spigola aggiungendo il 20% circa alla quantità assegnata per la lisca. Se non la consuma subito, può conservarla nel freezer avvolta in fogli di carta stagnola o di plastica. Può cuocerla al forno o al cartoccio, aggiungendo parte del condimento che le è stato assegnato.",
+  "ricetta_base": {
+    "nome": "Spigola",
+    "ingredienti": [
+      {"nome": "Spigola", "quantita": 240, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Orata",
+      "ingredienti": [
+        {"nome": "Orata", "quantita": 200, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Gamberi",
+      "ingredienti": [
+        {"nome": "Gamberi", "quantita": 330, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2081",
+  "nome": "SALMONE AFFUMICATO",
+  "categoria": "Secondi",
+  "descrizione": "Ci si riferisce al prodotto salato e affumicato, facilmente reperibile in confezioni sottovuoto. Conservi il salmone in frigorifero ad una temperatura non superiore ai 4° centigradi e lo consumi entro la data indicata sulla confezione. Se gradito, può consumarlo in fette molto sottili con parte del condimento assegnato.",
+  "ricetta_base": {
+    "nome": "Salmone affumicato",
+    "ingredienti": [
+      {"nome": "Salmone affumicato", "quantita": 180, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Tonno sott'olio",
+      "ingredienti": [
+        {"nome": "Tonno sott'olio", "quantita": 140, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2082",
+  "nome": "TONNO AL NATURALE",
+  "categoria": "Secondi",
+  "descrizione": "Scelga il tipo che preferisce tra quelli disponibili in commercio, facendo attenzione che la lattina non presenti ammaccature o rigonfiamenti. Può conservare il prodotto a temperatura ambiente fino al termine indicato e, una volta aperta la confezione, la mantenga in frigorifero e consumi il tonno entro ventiquattro ore. Al momento di assumerlo, elimini l'acqua di conservazione e controlli che il tonno presenti un colore rosato uniforme senza macchie scure, un odore delicato e gradevole e che il trancio sia intero e compatto. Può consumarlo al naturale o aggiungendo parte del condimento assegnato e, se lo gradisce, qualche goccia di limone.",
+  "ricetta_base": {
+    "nome": "Tonno al naturale",
+    "ingredienti": [
+      {"nome": "Tonno al naturale", "quantita": 150, "unita": "gr"},
+      {"nome": "Tonno al naturale", "quantita": 180, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Salmone affumicato",
+      "ingredienti": [
+        {"nome": "Salmone affumicato", "quantita": 110, "unita": "gr"},
+        {"nome": "Salmone affumicato", "quantita": 130, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Tonno sott'olio",
+      "ingredienti": [
+        {"nome": "Tonno sott'olio", "quantita": 80, "unita": "gr"},
+        {"nome": "Tonno sott'olio", "quantita": 100, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2121",
+  "nome": "FORMAGGIO CREMOSO LIGHT",
+  "categoria": "Secondi",
+  "descrizione": "Ci si riferisce al formaggio fresco, cremoso, dal sapore delicato, facilmente reperibile in commercio; rispetto al formaggio cremoso tradizionale, ha un contenuto di grassi più basso. Scelga il tipo che preferisce e lo conservi in frigorifero nella confezione originale. Consumi il formaggio entro la data indicata e, una volta aperta la confezione, entro due giorni al massimo.",
+  "ricetta_base": {
+    "nome": "Formaggio cremoso light",
+    "ingredienti": []
+  },
+  "alternative": []
+},
+{
+  "codice": "CAD:2137",
+  "nome": "MOZZARELLA",
+  "categoria": "Secondi",
+  "descrizione": "Ci si riferisce al formaggio fresco a pasta filata, prodotto con latte di vacca intero. Se fresca deve avere una consistenza morbida, una superficie liscia e brillante e un colore bianco omogeneo. Conservi la mozzarella nella parte alta del frigorifero ad una temperatura di circa 4° centigradi, in contenitori di vetro o di ceramica, immersa nel liquido con cui viene venduta e la consumi entro la data indicata sulla confezione.",
+  "ricetta_base": {
+    "nome": "Mozzarella",
+    "ingredienti": [
+      {"nome": "Mozzarella", "quantita": 90, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Ricotta di vacca",
+      "ingredienti": [
+        {"nome": "Ricotta di vacca", "quantita": 150, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2153",
+  "nome": "RICOTTA DI VACCA",
+  "categoria": "Secondi",
+  "descrizione": "Ci si riferisce al formaggio fresco ottenuto da latte di vacca con pasta molle, compatta e finemente granulosa, dal colore bianco o bianco avorio e dal sapore dolce e pastoso. Eviti di acquistare ricotte salate, affumicate o stagionate che hanno caratteristiche nutrizionali molto diverse dal prodotto fresco. Conservi la ricotta nella parte centrale del frigorifero ad una temperatura non superiore ai 5° centigradi, avvolta nella apposita carta; la consumi entro cinque giorni dall'acquisto, per evitare che assuma un sapore acido. Per apprezzarne al meglio le caratteristiche organolettiche, si consiglia di consumare la ricotta appena tolta dal frigorifero.",
+  "ricetta_base": {
+    "nome": "Ricotta di vacca",
+    "ingredienti": []
+  },
+  "alternative": []
+},
+{
+  "codice": "CAD:2176",
+  "nome": "FRITTATA",
+  "categoria": "Secondi",
+  "descrizione": "Al momento dell'acquisto, controlli la data di scadenza delle uova e la presenza della lettera \"A\" sulla confezione, che garantisce un prodotto fresco. Se consuma le uova entro uno o due giorni dall'acquisto, può tenerle a temperatura ambiente, altrimenti le conservi in frigorifero nell'apposito scomparto, con la parte tondeggiante rivolta verso l'alto e lontano da forti odori. Prepari la frittata verificando che, all'apertura del guscio, l'uovo non abbia un odore sgradevole e che il tuorlo sia compatto. Si consiglia l'uso di padelle antiaderenti, per ottimizzare la cottura e l'uso del condimento. Consideri un uovo di gallina del peso medio di circa g 60.",
+  "ricetta_base": {
+    "nome": "Frittata",
+    "ingredienti": [
+      {"nome": "Uovo di gallina", "quantita": 2, "unita": "n°"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Frittata con parmigiano",
+      "ingredienti": [
+        {"nome": "Uovo di gallina", "quantita": 1, "unita": "n°"},
+        {"nome": "Parmigiano grattugiato", "quantita": 4, "unita": "cucchiaini"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2184",
+  "nome": "FRITTATA CON PARMIGIANO",
+  "categoria": "Secondi",
+  "descrizione": "Al momento dell'acquisto, controlli la data di scadenza delle uova e la presenza della lettera \"A\" sulla confezione, che garantisce un prodotto fresco. Se consuma le uova entro uno o due giorni dall'acquisto, può tenerle a temperatura ambiente, altrimenti le conservi in frigorifero nell'apposito scomparto, con la parte tondeggiante rivolta verso l'alto e lontano da forti odori. Verifichi, all'apertura del guscio, che l'uovo non abbia un odore sgradevole e che il tuorlo sia compatto; prepari la frittata unendo alla quantità di uova assegnata il parmigiano prescritto. Si consiglia l'uso di padelle antiaderenti, per ottimizzare la cottura e l'uso del condimento. Consideri un uovo di gallina del peso medio di circa g 60.",
+  "ricetta_base": {
+    "nome": "Frittata con parmigiano",
+    "ingredienti": [
+      {"nome": "Uovo di gallina", "quantita": 1, "unita": "n°"},
+      {"nome": "Parmigiano grattugiato", "quantita": 4, "unita": "cucchiaini"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Frittata",
+      "ingredienti": [
+        {"nome": "Uovo di gallina", "quantita": 2, "unita": "n°"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2660",
+  "nome": "CRACKERS NON SALATI",
+  "categoria": "Altro",
+  "descrizione": "Ci si riferisce al prodotto da forno preparato con farina di grano, acqua e grassi vegetali, a forma di sottili sfoglie croccanti, non salate in superficie. In commercio può facilmente reperirli in vari formati e confezioni, scelga il tipo che preferisce evitando quelli arricchiti con cereali, sesamo, rosmarino, formaggio o altro. Conservi i crackers in un luogo fresco e asciutto e, una volta aperta la confezione, se non li consuma subito, per non alterarne la fragranza, richiuda con cura il pacchetto.",
+  "ricetta_base": {
+    "nome": "Crackers non salati",
+    "ingredienti": [
+      {"nome": "Crackers non salati", "quantita": 20, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Fette biscottate al malto d'orzo",
+      "ingredienti": [
+        {"nome": "Fette biscottate al malto d'orzo", "quantita": 20, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Fette biscottate ai cereali",
+      "ingredienti": [
+        {"nome": "Fette biscottate ai cereali", "quantita": 20, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2789",
+  "nome": "VERDURE MISTE",
+  "categoria": "Ingredienti Base",
+  "descrizione": "Scelga verdure e ortaggi tra quelli presenti nel suo piano alimentare, escludendo i legumi e le patate; se acquista il misto di verdure surgelato controlli che i vegetali utilizzati corrispondano a quelli consentiti. Può bollire le verdure o cucinarle in padella con parte del condimento assegnato.",
+  "ricetta_base": {
+    "nome": "Verdure miste",
+    "ingredienti": []
+  },
+  "alternative": []
+},
+{
+  "codice": "CAD:2900",
+  "nome": "ANANAS",
+  "categoria": "Frutta",
+  "descrizione": "Scelga frutti di consistenza non molle, con una corona di foglie fresche, un aroma fragrante e un bel colore arancio. Lo conservi in frigorifero solo se molto maturo e lo consumi quanto prima.",
+  "ricetta_base": {
+    "nome": "Ananas",
+    "ingredienti": [
+      {"nome": "Ananas", "quantita": 210, "unita": "gr"},
+      {"nome": "Ananas", "quantita": 280, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Mele",
+      "ingredienti": [
+        {"nome": "Mele", "quantita": 150, "unita": "gr"},
+        {"nome": "Mele", "quantita": 200, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Prugne",
+      "ingredienti": [
+        {"nome": "Prugne", "quantita": 250, "unita": "gr"},
+        {"nome": "Prugne", "quantita": 300, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2903",
+  "nome": "BANANE",
+  "categoria": "Frutta",
+  "descrizione": "Scelga frutti sodi e non danneggiati e, possibilmente, li acquisti a grappoli con i gambi intatti in quanto si manterranno più a lungo.",
+  "ricetta_base": {
+    "nome": "Banane",
+    "ingredienti": [
+      {"nome": "Banane", "quantita": 50, "unita": "gr"},
+      {"nome": "Banane", "quantita": 100, "unita": "gr"},
+      {"nome": "Banane", "quantita": 200, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Kiwi",
+      "ingredienti": [
+        {"nome": "Kiwi", "quantita": 90, "unita": "gr"},
+        {"nome": "Kiwi", "quantita": 180, "unita": "gr"},
+        {"nome": "Kiwi", "quantita": 270, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2911",
+  "nome": "KIWI",
+  "categoria": "Frutta",
+  "descrizione": "Si consiglia di acquistare questi frutti ancora acerbi e di lasciarli maturare a temperatura ambiente fino a quando risulteranno soffici alla pressione delle dita e, quindi, pronti per essere mangiati; questo permetterà di non compromettere l'elevato contenuto di vitamina C che è una delle caratteristiche nutrizionali più importanti di questo frutto. Ricordi che se tenuti a contatto con le mele, matureranno più velocemente.",
+  "ricetta_base": {
+    "nome": "Kiwi",
+    "ingredienti": [
+      {"nome": "Kiwi", "quantita": 90, "unita": "gr"},
+      {"nome": "Kiwi", "quantita": 180, "unita": "gr"},
+      {"nome": "Kiwi", "quantita": 270, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Ananas",
+      "ingredienti": [
+        {"nome": "Ananas", "quantita": 70, "unita": "gr"},
+        {"nome": "Ananas", "quantita": 210, "unita": "gr"},
+        {"nome": "Ananas", "quantita": 280, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Banane",
+      "ingredienti": [
+        {"nome": "Banane", "quantita": 50, "unita": "gr"},
+        {"nome": "Banane", "quantita": 100, "unita": "gr"},
+        {"nome": "Banane", "quantita": 200, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2918",
+  "nome": "MELE",
+  "categoria": "Frutta",
+  "descrizione": "Esistono diverse varietà, scelga quella che preferisce avendo cura che i frutti siano ben sodi, senza ammaccature e con il picciolo ancora attaccato; tenga presente, inoltre, che le varietà con la buccia verde hanno un minore contenuto di zuccheri. Le mangi preferibilmente con la buccia dopo averle accuratamente lavate con l'aggiunta di bicarbonato di sodio all'acqua. Le può consumare fresche o cotte.",
+  "ricetta_base": {
+    "nome": "Mele",
+    "ingredienti": []
+  },
+  "alternative": []
+},
+{
+  "codice": "CAD:2923",
+  "nome": "PERE",
+  "categoria": "Frutta",
+  "descrizione": "Di questo frutto esistono diverse varietà ma, al di là delle differenze di forma e di colore, hanno tutte lo stesso valore nutritivo per cui potrà scegliere quella che preferisce. Le conservi a temperatura ambiente fino a quando, premendo il frutto con le dita, questo non risulterà abbastanza morbido; se acquistate già mature, le può conservare in frigorifero. Se lo gradisce, può anche mangiarle cotte.",
+  "ricetta_base": {
+    "nome": "Pere",
+    "ingredienti": [
+      {"nome": "Pere", "quantita": 300, "unita": "gr"}
+    ]
+  },
+  "alternative": [
+    {
+      "nome": "Pesche",
+      "ingredienti": [
+        {"nome": "Pesche", "quantita": 350, "unita": "gr"}
+      ]
+    },
+    {
+      "nome": "Prugne",
+      "ingredienti": [
+        {"nome": "Prugne", "quantita": 300, "unita": "gr"}
+      ]
+    }
+  ]
+},
+{
+  "codice": "CAD:2924",
+  "nome": "PESCHE",
+  "categoria": "Frutta",
+  "descrizione": "Di questo frutto esistono diverse varietà: a buccia vellutata o a buccia liscia,altrimenti detta pesca noce; quelle nelle quali il nocciolo si divide dalla polpa, dette spiccagnole, e quelle non spiccagnole in cui, al contrario, è saldamente unito ad essa. Scelga la varietà che preferisce, orientandosi verso quelle a buccia liscia, se nota prurito o altre forme di allergia dopo l'assunzione di quelle a buccia vellutata. Se preferisce quest'ultimo tipo, invece, eviti di mangiarle con la buccia in quanto la particolare peluria che la riveste tende a trattenere le sostanze con le quali il frutto è entrato a contatto.",
+"ricetta_base": {
+"nome": "Pesche",
+"ingredienti": [
+{"nome": "Pesche", "quantita": 350, "unita": "gr"}
+]
+},
+"alternative": [
+{
+"nome": "Pere",
+"ingredienti": [
+{"nome": "Pere", "quantita": 250, "unita": "gr"}
+]
+},
+{
+"nome": "Prugne",
+"ingredienti": [
+{"nome": "Prugne", "quantita": 250, "unita": "gr"}
+]
+}
+]
+},
+{
+"codice": "CAD:2927",
+"nome": "PRUGNE",
+"categoria": "Frutta",
+"descrizione": "Di questo frutto, chiamato anche susina, esistono molte varietà, diverse per forma, colore dell'epidermide e periodo di maturazione, ma tutte equivalenti per valore nutritivo; scelga quella che preferisce, evitando di acquistare frutti non maturi o danneggiati. Vanno consumate entro breve tempo dall'acquisto in quanto non si mantengono a lungo.",
+"ricetta_base": {
+"nome": "Prugne",
+"ingredienti": [
+{"nome": "Prugne", "quantita": 200, "unita": "gr"},
+{"nome": "Prugne", "quantita": 300, "unita": "gr"}
+]
+},
+"alternative": [
+{
+"nome": "Pere",
+"ingredienti": [
+{"nome": "Pere", "quantita": 200, "unita": "gr"},
+{"nome": "Pere", "quantita": 300, "unita": "gr"}
+]
+},
+{
+"nome": "Mele",
+"ingredienti": [
+{"nome": "Mele", "quantita": 150, "unita": "gr"},
+{"nome": "Mele", "quantita": 200, "unita": "gr"}
+]
+}
+]
+},
+{
+"codice": "CAD:3077",
+"nome": "OLIO EXTRA VERGINE DI OLIVA",
+"categoria": "Ingredienti Base",
+"descrizione": "Ci si riferisce al condimento ricavato dalla prima spremitura delle olive, con un grado di acidità inferiore a 0,8%, prodotto attraverso la sola estrazione meccanica, senza manipolazioni chimiche o sofisticazioni dovute all'aggiunta di oli meno pregiati. In commercio sono disponibili varie tipologie, diverse per modalità di raccolta delle olive, luogo di produzione e caratteristiche organolettiche. Per preservarne al meglio le proprietà, conservi l'olio a temperatura ambiente al riparo dalla luce, in recipienti chiusi o bottiglie a collo stretto che presentano una minore superficie di esposizione all'aria. Pur avendo una buona resistenza alle alte temperature, durante la cottura l'olio extra vergine di oliva subisce delle modificazioni nella struttura chimica. Per questo motivo, è preferibile usarlo come condimento a crudo così da valorizzarne le proprietà nutritive. Utilizzi un cucchiaino di misura media che contiene circa g 4 di olio extra vergine di oliva.",
+"ricetta_base": {
+"nome": "Olio extra vergine di oliva",
+"ingredienti": []
+},
+"alternative": []
+},
+{
+"codice": "CAD:3120",
+"nome": "PARMIGIANO GRATTUGIATO",
+"categoria": "Ingredienti Base",
+"descrizione": "Acquisti il formaggio in pezzi, scegliendo tra il 'Reggiano' e il 'Grana padano' e lo conservi nella parte meno fredda del frigorifero in appositi contenitori di plastica o di vetro. Per non alterarne le caratteristiche organolettiche, è bene grattugiare il parmigiano solo al momento dell'uso; se lo gradisce, può aggiungerlo all'eventuale primo piatto presente nello stesso giorno dieta. Eventualmente può acquistare il formaggio già grattugiato, ma ricordi di consumarlo entro pochi giorni dall'acquisto oppure, nel caso del prodotto confezionato, di osservare il termine di scadenza indicato.",
+"ricetta_base": {
+"nome": "Parmigiano grattugiato",
+"ingredienti": []
+},
+"alternative": []
+},
+{
+"codice": "CAD:3507",
+"nome": "PANE BIANCO",
+"categoria": "Ingredienti Base",
+"descrizione": "Ci si riferisce al pane ottenuto con farina tipo '0', disponibile in commercio in vari formati. Se la qualità è buona, il pane deve avere un aroma gradevole e una crosta omogenea, non fragile; al momento del consumo, inoltre, la mollica dovrà presentare una porosità uniforme ed elastica, priva di zone vuote. Lo conservi a temperatura ambiente in un contenitore areato, preferibilmente di legno, avvolto nella carta con cui viene venduto o in un panno. Lo consumi entro due giorni dall'acquisto; se desidera, invece, conservarlo per più tempo, lo riponga nel congelatore e, prima di consumarlo, lo scaldi per qualche minuto nel forno. Eviti di tenerlo in frigorifero, dove il pane diviene raffermo più rapidamente. Il peso indicato si riferisce al pane completo di crosta e mollica, per cui dovrà assumerle entrambe; se lo desidera può, comunque, tostarlo.",
+"ricetta_base": {
+"nome": "Pane bianco",
+"ingredienti": []
+},
+"alternative": []
+},
+{
+"codice": "CAD:3777",
+"nome": "CROISSANT SEMPLICE",
+"categoria": "Altro",
+"descrizione": "Ci si riferisce al cornetto senza aggiunta di mandorle, crema, cioccolato o marmellata.",
+"ricetta_base": {
+"nome": "Croissant semplice",
+"ingredienti": [
+{"nome": "Croissant semplice", "quantita": 70, "unita": "gr"}
+]
+},
+"alternative": [
+{
+"nome": "Waffle",
+"ingredienti": [
+{"nome": "Waffle", "quantita": 80, "unita": "gr"}
+]
+},
+{
+"nome": "Torta di carote",
+"ingredienti": [
+{"nome": "Torta di carote", "quantita": 60, "unita": "gr"}
+]
+}
+]
+},
+{
+"codice": "CAD:3952",
+"nome": "ZUCCHERO",
+"categoria": "Ingredienti Base",
+"descrizione": "Ci si riferisce allo zucchero bianco raffinato; preferisca il tipo semolato, evitando di conservarlo in ambienti umidi al fine di mantenerne intatte le caratteristiche organolettiche. Consideri che un cucchiaino medio da caffè contiene circa g 5 di zucchero.",
+"ricetta_base": {
+"nome": "Zucchero",
+"ingredienti": [
+{"nome": "Zucchero", "quantita": 5, "unita": "gr"}
+]
+},
+"alternative": [
+{
+"nome": "Miele di acacia",
+"ingredienti": [
+{"nome": "Miele di acacia", "quantita": 8, "unita": "gr"}
+]
+}
+]
+},
+{
+"codice": "CAD:4015",
+"nome": "CAPPUCCINO (LATTE INTERO DI VACCA)",
+"categoria": "Altro",
+"descrizione": "Ci si riferisce alla bevanda preparata con caffè e latte vaccino intero. Il cappuccino è caratterizzato da uno strato di schiuma densa e cremosa, ottenuta incorporando aria calda nel latte. Può preparare il cappuccino a casa con l'apposita macchinetta oppure può richiederlo nei bar, avendo cura di rispettare il quantitativo indicato in dieta. Una tazza media di cappuccino (latte intero di vacca) equivale a circa g 100.",
+"ricetta_base": {
+"nome": "Cappuccino (latte intero di vacca)",
+"ingredienti": []
+},
+"alternative": []
+},
+{
+"codice": "CAD:4089",
+"nome": "CAFFÈ",
+"categoria": "Altro",
+"descrizione": "Può scegliere il caffè espresso o quello preparato con la moka. Per una migliore conservazione, si consiglia di riporre la confezione di caffè in un luogo fresco poiché il caldo ne accelera il deterioramento e, una volta aperta, in contenitori a chiusura ermetica; può essere conservato anche in frigorifero purché lontano da alimenti dai forti odori per evitare che questi ne alterino l'aroma. Una tazzina media di caffè equivale a circa g 50.",
+"ricetta_base": {
+"nome": "Caffè",
+"ingredienti": [
+{"nome": "Caffè", "quantita": 50, "unita": "gr"}
+]
+},
+"alternative": [
+{
+"nome": "Caffè decaffeinato",
+"ingredienti": [
+{"nome": "Caffè decaffeinato", "quantita": 50, "unita": "gr"}
+]
+}
+]
+},
+{
+"codice": "CAD:4208",
+"nome": "BARRETTA DI CEREALI CON FRUMENTO INTEGRALE (NESTLÉ FITNESS)",
+"categoria": "Altro",
+"descrizione": "Ci si riferisce alle barrette a base di frumento integrale, riso e zucchero. Al momento dell'acquisto scelga il tipo naturale evitando quelli con aggiunta di cioccolato o frutta. Conservi le barrette in un luogo fresco ed asciutto e le consumi entro la data di scadenza indicata.",
+"ricetta_base": {
+"nome": "Barretta di cereali con frumento integrale (Nestlé Fitness)",
+"ingredienti": []
+},
+"alternative": [
+{
+"nome": "Farro soffiato",
+"ingredienti": [
+{"nome": "Farro soffiato", "quantita": 20, "unita": "gr"}
+]
+},
+{
+"nome": "Fette biscottate integrali",
+"ingredienti": [
+{"nome": "Fette biscottate integrali", "quantita": 20, "unita": "gr"}
+]
+}
+]
+},
+{
+"codice": "CAD:9999",
+"nome": "PASTO LIBERO",
+"categoria": "Altro",
+"descrizione": "Per questo pasto dovrà scegliere gli alimenti e le relative quantità sull'esempio degli altri giorni-dieta. Questo esercizio è molto utile poichè anticipa ciò che lei dovrà fare una volta terminato il periodo di dieta. Gli alimenti indicati 'nell'arco della giornata' si riferiscono all'intero giorno-dieta e, pertanto, potranno essere assunti anche nel pasto libero.",
+"ricetta_base": {
+"nome": "Pasto libero",
+"ingredienti": []
+},
+"alternative": []
+}
+]
+}

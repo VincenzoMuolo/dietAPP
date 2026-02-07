@@ -1,0 +1,108 @@
+{
+  "norme_generali": {
+    "comportamenti_da_evitare": [
+      "Diminuire o incrementare le quantità di qualsiasi alimento presente nell'elaborato",
+      "Saltare i pasti",
+      "Invertire i giorni dieta",
+      "Sostituire o spostare gli alimenti senza una precisa indicazione del dietista"
+    ],
+    "metodi_di_cottura": {
+      "carne_e_pesce": [
+        "Alla griglia",
+        "Al forno",
+        "In padella",
+        "In umido",
+        "Al cartoccio",
+        "Lessati"
+      ],
+      "verdure": [
+        "Alla griglia",
+        "Al forno",
+        "In padella",
+        "Lessate",
+        "Al vapore"
+      ]
+    },
+    "personalizzazioni_dei_pasti": {
+      "descrizione": "È consentito unire in un unico piatto due o più portate di un pasto, quando gli alimenti che lo compongono lo consentono e in conformità con i propri gusti, avendo cura di non modificare le quantità indicate.",
+      "esempi": [
+        "Utilizzare tutto o parte del contorno e/o del secondo assegnato per condire il primo piatto",
+        "Utilizzare tutta o parte della frutta per arricchire un contorno o un secondo"
+      ]
+    },
+    "acqua": {
+      "tipo": "Acqua di fonte o naturale non gassata",
+      "temperatura": "Preferibilmente a temperatura ambiente",
+      "quantita_raccomandata": "Almeno 1-1,5 litri in condizioni normali",
+      "quando_incrementare": [
+        "In presenza di elevate temperature",
+        "In caso di esercizio fisico",
+        "In condizioni con specifiche indicazioni del dietista"
+      ],
+      "durante_pasti": "Può bere durante i pasti ma senza eccedere, al fine di non diluire troppo i succhi gastrici che sono fondamentali per un efficace processo digestivo",
+      "principio": "Bere in modo da soddisfare il senso della sete ogni qual volta si avverte"
+    },
+    "surgelati": {
+      "consentiti": true,
+      "descrizione": "È consentito l'uso dei surgelati per tutti quei prodotti, principalmente pesce e verdure, difficilmente reperibili freschi"
+    },
+    "spezie_e_aromi": {
+      "consentiti": true,
+      "descrizione": "Al fine di rendere più gradevoli le varie pietanze, viene in alcuni casi consigliato l'utilizzo, se gradito, di spezie e aromi da cucina in modeste quantità"
+    },
+    "sale": {
+      "consentito": true,
+      "descrizione": "L'uso del sale nella preparazione dei cibi è consentito, ma il quantitativo utilizzato dovrà essere quello minimo sufficiente a soddisfare il gusto"
+    },
+    "nell_arco_della_giornata": {
+      "descrizione": "Gli alimenti sotto questa dicitura potranno essere distribuiti in qualsiasi momento della giornata, durante i pasti o al di fuori di essi",
+      "nota_importante": "Non sono facoltativi e devono essere consumati in aggiunta a quelli precedentemente assegnati nello stesso giorno dieta"
+    },
+    "cad_codice_alimentare_dietetico": {
+      "descrizione": "Accanto a molti alimenti troverà la sigla 'CAD' (Codice Alimentare Dietetico) seguita da un numero che permetterà di individuare e leggere, nella apposita sezione finale della dieta, alcuni utili consigli relativi ai singoli alimenti"
+    },
+    "alternative_alimentari": {
+      "descrizione": "In una sezione apposita dell'elaborato troverà delle tabelle utili per alternare alcuni alimenti presenti nel piano alimentare",
+      "struttura": "Nelle tabelle figurano in alto gli alimenti di prima scelta con le quantità assegnate nel piano alimentare e, nelle righe sottostanti, gli alimenti alternativi",
+      "nota": "Gli alimenti di prima scelta sono quelli che dovrà assumere con maggiore frequenza"
+    },
+    "pasti_liberi": {
+      "descrizione": "Nella dieta sono assegnati pasti e/o giorni a dieta libera al fine di abituare il paziente ad autogestirsi",
+      "esercizio": "Ricostruire il pasto o l'intero giorno-dieta sull'esempio di quanto è stato normalmente assegnato"
+    }
+  },
+  "pesi_e_misure": {
+    "peso_alimenti": {
+      "momento_pesatura": "A crudo (tranne i casi in cui è indicato diversamente)",
+      "alimenti_surgelati": "Pesare dopo averli scongelati",
+      "parte_edibile": "Il peso si riferisce esclusivamente alla parte edibile",
+      "esempi_parte_edibile": [
+        "La carne va pesata senza le ossa",
+        "La frutta senza la buccia e, quando presenti, i semi",
+        "Il pesce dopo aver eliminato le parti non commestibili come testa, lisca, ecc."
+      ]
+    },
+    "suggerimento_famiglie": "Chi vive in famiglia può ridurre i tempi di cottura utilizzando una pentola a due scomparti che permette la cottura simultanea di quantità e tipi diversi di alimenti",
+    "bilancia_pesa_alimenti": {
+      "controllo_precisione": "Prima di iniziare la dieta e poi periodicamente, controllare la precisione della bilancia",
+      "metodo_controllo": "Effettuare più prove con prodotti di cui si conosce esattamente il peso",
+      "esempi_controllo": [
+        "Prodotti più piccoli: biscotto, fetta biscottata, ecc.",
+        "Prodotti più grandi: confezione di formaggio cremoso, contenuto di un pacco di pasta, un kg di zucchero, ecc."
+      ]
+    },
+    "approssimazione": {
+      "avvertenza": "Qualsiasi tipo di approssimazione può aumentare notevolmente il tempo necessario per il conseguimento dell'obiettivo terapeutico",
+      "regola": "Per aderire correttamente al piano alimentare occorre attenersi con precisione alla prescrizione dietetica e pesare accuratamente tutti gli alimenti espressi in grammatura",
+      "errore_da_evitare": "Non bisogna mai avere la presunzione di 'sentirsi esperti' tanto da poter quantificare gli alimenti 'ad occhio' quando ciò non è richiesto, perché tale atteggiamento influisce negativamente sul conseguimento dei risultati"
+    },
+    "quando_pesano_gli_altri": {
+      "descrizione": "Nel caso in cui a pesare gli alimenti o a cucinare siano altre persone, occorre accertarsi che queste non effettuino errori",
+      "errori_da_evitare": [
+        "Regolarsi 'ad occhio' per la quantificazione dei cibi",
+        "Incrementare le quantità degli alimenti assegnati"
+      ],
+      "avvertenza": "Può capitare che tali persone, ignare delle regole basilari della dietetica, incrementino le quantità credendo di poter stabilire loro i tempi giusti per il raggiungimento dei risultati, manomettendo il piano alimentare e compromettendone i presupposti scientifici e i risultati"
+    }
+  }
+}
