@@ -6,7 +6,6 @@ function CadPage({ cadData, setModalCad }) {
 
     const allCads = (cadData?.codici_alimentari || []);
 
-    // Raggruppa per categoria
     const groupedCads = {};
     
     allCads.forEach(cad => {
@@ -29,14 +28,12 @@ function CadPage({ cadData, setModalCad }) {
         }
     });
 
-    // Rimuovi categorie vuote
     Object.keys(groupedCads).forEach(cat => {
         if (groupedCads[cat].length === 0) {
             delete groupedCads[cat];
         }
     });
 
-    // ✨ ORDINE PERSONALIZZATO DELLE CATEGORIE
     const categoryOrder = [
         'Primi',
         'Secondi',
@@ -45,21 +42,13 @@ function CadPage({ cadData, setModalCad }) {
         'Altro'
     ];
 
-    // Ordina secondo l'ordine definito
     const sortedCategories = Object.keys(groupedCads).sort((a, b) => {
         const indexA = categoryOrder.indexOf(a);
         const indexB = categoryOrder.indexOf(b);
         
-        // Se entrambe sono nell'ordine, usa quello
         if (indexA !== -1 && indexB !== -1) return indexA - indexB;
-        
-        // Se solo A è nell'ordine, mettila prima
         if (indexA !== -1) return -1;
-        
-        // Se solo B è nell'ordine, mettila prima
         if (indexB !== -1) return 1;
-        
-        // Se nessuna è nell'ordine, ordine alfabetico
         return a.localeCompare(b);
     });
 

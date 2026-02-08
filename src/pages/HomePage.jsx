@@ -1,98 +1,98 @@
-import React, { useState, useEffect } from 'react';
-import { getDayName, getMealName, isPreparedDish, getCurrentMealTime, isPastMeal } from '../utils/Utils';
-import { ChevronDownIcon, ArrowLeft, ArrowRight} from '../utils/Icons';
+import React from 'react';
+import { getDayName, isPreparedDish } from '../utils/Utils';
 
-function HomePage({ dietData, currentWeek, currentDayIndex, days, goToPreviousDay, goToNextDay, canGoPrevious, canGoNext, setModalCad, getCadByCode, isCurrentDay }) {
+function HomePage({ dietData, currentWeek, currentDayIndex, days, goToPreviousDay, goToNextDay, canGoPrevious, canGoNext, setModalCad, getCadByCode }) {
     const currentDayKey = days[currentDayIndex];
     const dayData = dietData.piano_alimentare[`settimana_${currentWeek}`][currentDayKey];
-    const [expandedMeals, setExpandedMeals] = useState({});
 
-    useEffect(() => {
-        if (isCurrentDay) {
-            const currentMeal = getCurrentMealTime();
-            const initialExpanded = {};
+    // Funzione per combinare zucchero con caffè/cappuccino
+    const combineFoodsWithSugar = (foods) => {
+        const combined = [];
+        let skipNext = false;
+
+        for (let i = 0; i < foods.length; i++) {
+            if (skipNext) {
+                skipNext = false;
+                continue;
+            }
+
+            const currentFood = foods[i];
+            const nextFood = foods[i + 1];
+            const currentName = currentFood.alimento.toLowerCase();
             
-            Object.keys(dayData).forEach(mealKey => {
-                // Se è la sezione speciale, la teniamo sempre aperta
-                if (mealKey === 'nell_arco_della_giornata') {
-                    initialExpanded[mealKey] = true;
-                } else if (mealKey === currentMeal) {
-                    initialExpanded[mealKey] = true;
-                } else {
-                    initialExpanded[mealKey] = false;
+            // Se è caffè o cappuccino e il prossimo è zucchero, combinali
+            if ((currentName.includes('caffè') || currentName.includes('caffe') || currentName.includes('cappuccino')) && 
+                nextFood && nextFood.alimento.toLowerCase().includes('zucchero')) {
+                
+                combined.push({
+                    ...currentFood,
+                    sugar: nextFood.quantita
+                });
+                skipNext = true;
+            } else {
+                // Skip standalone sugar items
+                if (!currentName.includes('zucchero')) {
+                    combined.push(currentFood);
                 }
-            });
-            
-            setExpandedMeals(initialExpanded);
-        } else {
-            const allStates = {};
-            Object.keys(dayData).forEach(mealKey => {
-                // Anche negli altri giorni, questa sezione resta aperta
-                allStates[mealKey] = mealKey === 'nell_arco_della_giornata';
-            });
-            setExpandedMeals(allStates);
+            }
         }
-    }, [currentDayKey, currentWeek, isCurrentDay, dayData]);
 
-    const toggleMeal = (mealKey) => {
-        // Impediamo il toggle se è la sezione speciale
-        if (mealKey === 'nell_arco_della_giornata') return;
-
-        setExpandedMeals(prev => ({
-            ...prev,
-            [mealKey]: !prev[mealKey]
-        }));
+        return combined;
     };
 
     return (
         <div className="container">
-            <div className="day-selector glass">
-                <button className="arrow-btn" onClick={goToPreviousDay} disabled={!canGoPrevious}>
-                    <ArrowLeft/>
-                </button>
-                <div className="day-info">
-                    <div className="day-name">{getDayName(currentDayKey)}</div>
-                    <div className="week-info">Settimana {currentWeek}</div>
+            {/* HEADER NAVIGAZIONE */}
+            <div className="day-selector">
+                <div 
+                    className="day-arrow" 
+                    onClick={!canGoPrevious ? null : goToPreviousDay}
+                    style={{
+                        opacity: canGoPrevious ? 1 : 0.2,
+                        cursor: canGoPrevious ? 'pointer' : 'not-allowed'
+                    }}
+                >
+                    ‹
                 </div>
-                <button className="arrow-btn" onClick={goToNextDay} disabled={!canGoNext}>
-                    <ArrowRight/>
-                </button>
+                
+                <div className="date-info">
+                    <div className="day-name">{getDayName(currentDayKey)}</div>
+                    <div className="week-badge">Settimana {currentWeek}</div>
+                </div>
+                
+                <div 
+                    className="day-arrow"
+                    onClick={!canGoNext ? null : goToNextDay}
+                    style={{
+                        opacity: canGoNext ? 1 : 0.2,
+                        cursor: canGoNext ? 'pointer' : 'not-allowed'
+                    }}
+                >
+                    ›
+                </div>
             </div>
 
+            {/* MEAL SECTIONS */}
             {Object.entries(dayData).map(([mealKey, foods]) => {
-                const isSpecialMeal = mealKey === 'nell_arco_della_giornata';
-                const isExpanded = isSpecialMeal ? true : (expandedMeals[mealKey] || false);
-                const isCurrent = isCurrentDay && mealKey === getCurrentMealTime();
+                const isDaily = mealKey === 'nell_arco_della_giornata';
+                const processedFoods = combineFoodsWithSugar(foods);
                 
                 return (
-                    <div key={mealKey} className="meal-section">
-                        <div 
-                            className={`meal-header 
-                                ${isExpanded ? 'expanded' : ''} 
-                                ${isCurrent ? 'current' : ''} 
-                                ${isSpecialMeal ? 'static-header' : ''}`}
-                            // Rimuoviamo la funzione di click se è special
-                            onClick={isSpecialMeal ? null : () => toggleMeal(mealKey)}
-                            style={isSpecialMeal ? { cursor: 'default' } : {}}
-                        >
-                            <div className="meal-header-left">
-                                {/* Pallino: rimosso se isSpecialMeal */}
-                                {!isSpecialMeal && <div className="meal-time-indicator" />}
-                                
-                                <span className="meal-title">{getMealName(mealKey)}</span>
-                            </div>
-
-                            {/* Freccia: rimossa se isSpecialMeal */}
-                            {!isSpecialMeal && <ChevronDownIcon />}
+                    <div key={mealKey} className={`meal-section`}>
+                        <div className="meal-header-flat">
+                            {getMealLabel(mealKey)}
                         </div>
-
-                        <div className={`meal-content ${isExpanded ? 'expanded' : ''}`}>
-                            <div className="foods-grid">
-                                {foods.map((food, idx) => (
-                                    <FoodCard key={idx} food={food} setModalCad={setModalCad} getCadByCode={getCadByCode} />
-                                ))}
-                            </div>
-                        </div>
+                        
+                        <ul className="food-list-flat">
+                            {processedFoods.map((food, idx) => (
+                                <FoodItem 
+                                    key={idx} 
+                                    food={food} 
+                                    setModalCad={setModalCad} 
+                                    getCadByCode={getCadByCode} 
+                                />
+                            ))}
+                        </ul>
                     </div>
                 );
             })}
@@ -100,29 +100,51 @@ function HomePage({ dietData, currentWeek, currentDayIndex, days, goToPreviousDa
     );
 }
 
-// Food Card Component rimane invariato
-function FoodCard({ food, setModalCad, getCadByCode }) {
+// Converti chiave pasto in label
+function getMealLabel(mealKey) {
+    const labels = {
+        'colazione': 'COLAZIONE',
+        'spuntino_meta_mattina': 'SPUNTINO',
+        'pranzo': 'PRANZO',
+        'merenda': 'MERENDA',
+        'cena': 'CENA',
+        'nell_arco_della_giornata': 'NELL\'ARCO DELLA GIORNATA'
+    };
+    return labels[mealKey] || mealKey.toUpperCase();
+}
+
+// Componente singolo alimento
+function FoodItem({ food, setModalCad, getCadByCode }) {
     const showCad = isPreparedDish(food) && food.cad;
+    const handleClick = showCad ? () => setModalCad(getCadByCode(food.cad)) : null;
 
     return (
-        <div className="food-card glass">
-            <div className="food-name">{food.alimento}</div>
-            {food.quantita && <div className="food-quantity">{food.quantita}</div>}
-            {showCad && (
-                <span className="cad-badge" onClick={() => setModalCad(getCadByCode(food.cad))}>
-                    CAD:{food.cad}
-                </span>
-            )}
-            {food.composizione && (
-                <div className="composition">
-                    {food.composizione.map((item, idx) => (
-                        <div key={idx} className="composition-item">
-                            • {item.alimento} - {item.quantita}
-                        </div>
-                    ))}
+        <li className="food-item-flat" onClick={handleClick}>
+            <div className="food-left">
+                <div className="food-name-flat">
+                    {food.alimento}
+                    {food.sugar && ` + Zucchero (${food.sugar})`}
+                    {showCad && (
+                        <span className="food-cad-badge">CAD:{food.cad}</span>
+                    )}
                 </div>
+                
+                {food.composizione && (
+                    <div className="food-ingredients-flat">
+                        {food.composizione.map((item, idx) => (
+                            <div key={idx} className="ingredient-line-flat">
+                                <span>{item.alimento}</span>
+                                <span className="ingredient-qty-flat">{item.quantita}</span>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
+            
+            {food.quantita && !food.composizione && (
+                <div className="food-quantity-flat">{food.quantita}</div>
             )}
-        </div>
+        </li>
     );
 }
 

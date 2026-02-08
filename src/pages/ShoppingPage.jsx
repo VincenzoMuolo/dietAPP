@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getDayName } from '../utils/Utils';
 
 function ShoppingPage({ dietData, productList }) {
@@ -11,8 +11,33 @@ function ShoppingPage({ dietData, productList }) {
     const [checkedItems, setCheckedItems] = useState(new Set());
     const [currentTab, setCurrentTab] = useState('todo');
     const [controlsCollapsed, setControlsCollapsed] = useState(false);
+    const [listKey, setListKey] = useState('');
 
     const dayOptions = ['lunedi', 'martedi', 'mercoledi', 'giovedi', 'venerdi', 'sabato', 'domenica'];
+
+    useEffect(() => {
+        const savedList = localStorage.getItem('shoppingList');
+        const savedChecked = localStorage.getItem('shoppingChecked');
+        const savedListKey = localStorage.getItem('shoppingListKey');
+        const savedTab = localStorage.getItem('shoppingTab');
+
+        if (savedList && savedChecked && savedListKey) {
+            setResults(JSON.parse(savedList));
+            setCheckedItems(new Set(JSON.parse(savedChecked)));
+            setListKey(savedListKey);
+            setCurrentTab(savedTab || 'todo');
+            setControlsCollapsed(true);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (results) {
+            localStorage.setItem('shoppingList', JSON.stringify(results));
+            localStorage.setItem('shoppingChecked', JSON.stringify([...checkedItems]));
+            localStorage.setItem('shoppingListKey', listKey);
+            localStorage.setItem('shoppingTab', currentTab);
+        }
+    }, [results, checkedItems, listKey, currentTab]);
 
     const shouldSkipItem = (itemName) => {
         const lowerName = itemName.toLowerCase();
@@ -25,7 +50,6 @@ function ShoppingPage({ dietData, productList }) {
         );
     };
 
-    // Estrae gli ingredienti dal piano alimentare (metodo vecchio, preciso)
     const extractFromDietData = (targetDays) => {
         if (!dietData) return {};
 
@@ -39,12 +63,10 @@ function ShoppingPage({ dietData, productList }) {
             const dayMeals = weekData[day];
             if (!dayMeals) return;
 
-            // Itera su tutti i pasti del giorno
             Object.values(dayMeals).forEach(foods => {
                 foods.forEach(food => {
                     if (shouldSkipItem(food.alimento)) return;
 
-                    // Se ha composizione, estrai gli ingredienti
                     if (food.composizione && food.composizione.length > 0) {
                         food.composizione.forEach(ingredient => {
                             const name = ingredient.alimento.toLowerCase();
@@ -60,7 +82,6 @@ function ShoppingPage({ dietData, productList }) {
                             aggregated[name].rawQuantities.push(quantity);
                         });
                     } else {
-                        // Alimento semplice
                         const name = food.alimento.toLowerCase();
                         const quantity = food.quantita;
 
@@ -79,7 +100,6 @@ function ShoppingPage({ dietData, productList }) {
             });
         });
 
-        // Converti rawQuantities in quantities aggregate
         Object.keys(aggregated).forEach(key => {
             const item = aggregated[key];
             item.quantities = parseAndAggregateQuantities(item.rawQuantities);
@@ -89,7 +109,6 @@ function ShoppingPage({ dietData, productList }) {
         return aggregated;
     };
 
-    // Parser per aggregare quantità in formato stringa
     const parseAndAggregateQuantities = (quantityStrings) => {
         const quantities = {};
 
@@ -98,14 +117,12 @@ function ShoppingPage({ dietData, productList }) {
 
             const str = qtyStr.toLowerCase();
 
-            // Parsing grammi (es: "g 150", "150g", "150 g")
             const gramMatch = str.match(/(\d+)\s*g/);
             if (gramMatch) {
                 quantities.g = (quantities.g || 0) + parseInt(gramMatch[1]);
                 return;
             }
 
-            // Parsing pezzi (es: "n° 2", "2 pz")
             const pieceMatch = str.match(/n°?\s*(\d+)|(\d+)\s*pz/);
             if (pieceMatch) {
                 const val = parseInt(pieceMatch[1] || pieceMatch[2]);
@@ -113,21 +130,18 @@ function ShoppingPage({ dietData, productList }) {
                 return;
             }
 
-            // Parsing tazzine
             const cupMatch = str.match(/(\d+)\s*tazzin/);
             if (cupMatch) {
                 quantities['tazz.'] = (quantities['tazz.'] || 0) + parseInt(cupMatch[1]);
                 return;
             }
 
-            // Parsing cucchiaini
             const spoonMatch = str.match(/(\d+)\s*cucchiai/);
             if (spoonMatch) {
                 quantities['cucchiaini'] = (quantities['cucchiaini'] || 0) + parseInt(spoonMatch[1]);
                 return;
             }
 
-            // Parsing frazioni (es: "1/2 cucchiaino")
             const fractionMatch = str.match(/(\d+)\/(\d+)/);
             if (fractionMatch) {
                 const num = parseInt(fractionMatch[1]);
@@ -144,7 +158,6 @@ function ShoppingPage({ dietData, productList }) {
         return quantities;
     };
 
-    // Estrae dal JSON aggregato (metodo nuovo, solo per settimana intera)
     const extractFromProductList = () => {
         if (!productList) return {};
 
@@ -169,7 +182,6 @@ function ShoppingPage({ dietData, productList }) {
                     };
                 }
 
-                // Aggiungi quantità
                 if (item.quantita_g !== undefined) {
                     aggregated[name].quantities.g = (aggregated[name].quantities.g || 0) + item.quantita_g;
                 }
@@ -186,7 +198,6 @@ function ShoppingPage({ dietData, productList }) {
     };
 
     const generateShoppingList = () => {
-        // Determina i giorni target
         let targetDays = [];
         if (shoppingType === 'day') {
             targetDays = [selectedDay];
@@ -200,28 +211,42 @@ function ShoppingPage({ dietData, productList }) {
 
         let aggregated;
 
-        // LOGICA IBRIDA:
-        // - Se settimana INTERA → usa productList (JSON aggregato, più veloce)
-        // - Altrimenti → usa dietData (JSON dettagliato, più preciso)
         if (shoppingType === 'week') {
-            console.log('📊 Usando JSON aggregato (settimana intera)');
             aggregated = extractFromProductList();
         } else {
-            console.log('📊 Usando JSON dettagliato (giorni specifici)');
             aggregated = extractFromDietData(targetDays);
         }
 
-        // Converti in array e ordina
         const resultArray = Object.values(aggregated)
             .filter(item => Object.keys(item.quantities).length > 0)
             .sort((a, b) => a.name.localeCompare(b.name));
 
-        console.log(`✅ Lista generata: ${resultArray.length} elementi`);
-        
+        const key = shoppingType === 'day' 
+            ? `${selectedDay}-W${selectedWeek}`
+            : shoppingType === 'range'
+            ? `${startDay}-${endDay}-W${selectedWeek}`
+            : `week-${selectedWeek}`;
+
+        setListKey(key);
         setResults(resultArray);
         setCheckedItems(new Set());
         setCurrentTab('todo');
         setControlsCollapsed(true);
+    };
+
+    const resetShoppingList = () => {
+        if (window.confirm('Vuoi davvero resettare la lista della spesa?')) {
+            setResults(null);
+            setCheckedItems(new Set());
+            setListKey('');
+            setCurrentTab('todo');
+            setControlsCollapsed(false);
+            
+            localStorage.removeItem('shoppingList');
+            localStorage.removeItem('shoppingChecked');
+            localStorage.removeItem('shoppingListKey');
+            localStorage.removeItem('shoppingTab');
+        }
     };
 
     const toggleItem = (itemKey) => {
@@ -365,6 +390,13 @@ function ShoppingPage({ dietData, productList }) {
                                 </div>
                             ))
                         )}
+                        
+                        <button 
+                            className="reset-shopping-btn"
+                            onClick={resetShoppingList}
+                        >
+                            🗑️ Resetta Lista Spesa
+                        </button>
                     </div>
                 </>
             )}

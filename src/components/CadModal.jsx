@@ -1,4 +1,5 @@
 import React from 'react';
+
 function CadModal({ cad, onClose }) {
     if (!cad) return null;
 
@@ -8,10 +9,10 @@ function CadModal({ cad, onClose }) {
                 <button className="modal-close" onClick={onClose}>×</button>
                 
                 <div className="cad-container">
-                {cad.categoria && (
-                    <div className="cad-category-badge">{cad.categoria}</div>
-                )}
-                <div className="cad-category-badge">{cad.codice}</div>
+                    {cad.categoria && (
+                        <div className="cad-category-badge">{cad.categoria}</div>
+                    )}
+                    <div className="cad-category-badge">{cad.codice}</div>
                 </div>
               
                 <div className="cad-name">{cad.nome}</div>

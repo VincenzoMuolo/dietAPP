@@ -21,14 +21,6 @@ const BookIcon = () => (
     </svg>
 );
 
-const InfoIcon = () => (
-    <svg className="icon" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="12" y1="16" x2="12" y2="12"></line>
-        <line x1="12" y1="8" x2="12.01" y2="8"></line>
-    </svg>
-);
-
 const ChevronDownIcon = () => (
     <svg className="expand-icon" viewBox="0 0 24 24">
         <polyline points="6 9 12 15 18 9"></polyline>
@@ -50,6 +42,15 @@ const ArrowRight = () =>(
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor" opacity="0.3">
   <path d="M8.3 18.7a1 1 0 0 1 0-1.4L13.6 12 8.3 6.7a1 1 0 0 1 1.4-1.4l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 0 1-1.4 0z"/>
 </svg>
-
 );
-export { HomeIcon, ShoppingCartIcon, BookIcon, InfoIcon, ChevronDownIcon, LogoIcon, ArrowLeft, ArrowRight};
+
+const SettingsIcon = () => (
+    <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="3" width="14" height="5" rx="2.5" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="14" cy="5.5" r="1.5" fill="currentColor"/>
+        
+        <rect x="3" y="12" width="14" height="5" rx="2.5" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="6" cy="14.5" r="1.5" fill="currentColor"/>
+    </svg>
+);
+export { HomeIcon, ShoppingCartIcon, BookIcon, ChevronDownIcon, LogoIcon, ArrowLeft, ArrowRight, SettingsIcon};
