@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import ShoppingPage from './pages/ShoppingPage';
+import WeightPage from './pages/WeightPage';
 import CadPage from './pages/CadPage';
 import Navigation from './components/Navigation';
 import CadModal from './components/CadModal';
@@ -206,7 +207,7 @@ function App() {
 
             {currentPage === 'shopping' && <ShoppingPage dietData={dietState} productList={productList} />}
             {currentPage === 'cad' && <CadPage cadData={cadState} setModalCad={setModalCad} />}
-
+            {currentPage === 'weight' && <WeightPage />}
             <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} navVisible={navVisible} />
 
             {modalCad && (

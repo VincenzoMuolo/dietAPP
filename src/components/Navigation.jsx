@@ -7,21 +7,22 @@ function Navigation({ currentPage, setCurrentPage, navVisible }) {
             <div className="nav-menu">
                 <button
                     className={`nav-btn ${currentPage === 'home' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('home')}
-                >
+                    onClick={() => setCurrentPage('home')}>
                     Piano
                 </button>
                 <button
                     className={`nav-btn ${currentPage === 'shopping' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('shopping')}
-                >
+                    onClick={() => setCurrentPage('shopping')}>
                     Spesa
                 </button>
                 <button
                     className={`nav-btn ${currentPage === 'cad' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('cad')}
-                >
+                    onClick={() => setCurrentPage('cad')}>
                     CAD
+                </button>
+                <button className={`nav-btn ${currentPage === 'weight' ? 'active' : ''}`}
+                    onClick={() => setCurrentPage('weight')}>
+                    Pesate
                 </button>
             </div>
         </div>
