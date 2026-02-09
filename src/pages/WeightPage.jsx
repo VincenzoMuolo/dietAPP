@@ -3,11 +3,9 @@ import React, { useState, useEffect } from 'react';
 function WeightPage() {
     const [pesate, setPesate] = useState({});
     const [peso, setPeso] = useState('');
-    const [note, setNote] = useState('');
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);
-    const [view, setView] = useState('input'); // 'input' | 'metriche'
-    const [timeframe, setTimeframe] = useState('settimana'); // 'settimana' | 'mese' | 'tutto'
+    const [timeframe, setTimeframe] = useState('settimana');
 
     const today = new Date().toISOString().split('T')[0];
 
@@ -19,10 +17,22 @@ function WeightPage() {
     const loadPesate = async () => {
         try {
             const response = await fetch('/api/pesate');
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
             const data = await response.json();
             setPesate(data);
         } catch (error) {
             console.error('Errore caricamento pesate:', error);
+            // Fallback a localStorage se KV non disponibile
+            try {
+                const saved = localStorage.getItem('pesate_backup');
+                if (saved) {
+                    setPesate(JSON.parse(saved));
+                }
+            } catch (e) {
+                console.error('Errore localStorage:', e);
+            }
         } finally {
             setLoading(false);
         }
@@ -34,24 +44,33 @@ function WeightPage() {
 
         setSaving(true);
         try {
-            await fetch('/api/pesate', {
+            const response = await fetch('/api/pesate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     date: today,
                     peso: parseFloat(peso),
-                    note
+                    note: ''
                 })
             });
 
-            // Ricarica dati
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
+            const result = await response.json();
+            
+            // Aggiorna stato locale
             await loadPesate();
+            
+            // Backup locale
+            localStorage.setItem('pesate_backup', JSON.stringify(result.pesate || pesate));
+            
             setPeso('');
-            setNote('');
-            alert('Pesata salvata!');
+            alert('✅ Pesata salvata!');
         } catch (error) {
             console.error('Errore salvataggio:', error);
-            alert('Errore nel salvataggio');
+            alert('❌ Errore: impossibile salvare. Verifica la connessione.');
         } finally {
             setSaving(false);
         }
@@ -61,14 +80,20 @@ function WeightPage() {
         if (!window.confirm('Vuoi eliminare questa pesata?')) return;
 
         try {
-            await fetch('/api/pesate', {
+            const response = await fetch('/api/pesate', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ date })
             });
+
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+
             await loadPesate();
         } catch (error) {
             console.error('Errore eliminazione:', error);
+            alert('❌ Errore: impossibile eliminare.');
         }
     };
 
@@ -83,10 +108,9 @@ function WeightPage() {
         const differenza = pesoAttuale - pesoIniziale;
         const percentuale = ((differenza / pesoIniziale) * 100).toFixed(2);
 
-        // Filtra per timeframe
         let filteredEntries = entries;
         const now = new Date();
-        
+
         if (timeframe === 'settimana') {
             const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
             filteredEntries = entries.filter(([date]) => new Date(date) >= weekAgo);
@@ -126,120 +150,57 @@ function WeightPage() {
     }
 
     return (
-        <div className="container">
-            {/* TABS */}
-            <div className="pesate-tabs">
-                <button 
-                    className={`tab-btn ${view === 'input' ? 'active' : ''}`}
-                    onClick={() => setView('input')}
-                >
-                    INSERISCI
-                </button>
-                <button 
-                    className={`tab-btn ${view === 'metriche' ? 'active' : ''}`}
-                    onClick={() => setView('metriche')}
-                >
-                    METRICHE
-                </button>
+        <div className="container weight-container">
+            {/* INPUT RAPIDO */}
+            <div className="weight-input-card glass-strong">
+                <div className="date-display">
+                    <div className="date-label">OGGI</div>
+                    <div className="date-value">{formatDate(today)}</div>
+                </div>
+
+                {todayPesata ? (
+                    <div className="peso-salvato">
+                        <div className="peso-salvato-value">{todayPesata.peso} kg</div>
+                        <button className="delete-btn-mini" onClick={() => handleDelete(today)}>
+                            Elimina
+                        </button>
+                    </div>
+                ) : (
+                    <form onSubmit={handleSave} className="peso-input-form">
+                        <input
+                            type="number"
+                            step="0.1"
+                            value={peso}
+                            onChange={(e) => setPeso(e.target.value)}
+                            placeholder="75.5"
+                            required
+                            className="peso-input"
+                            autoFocus
+                        />
+                        <button type="submit" className="save-btn-mini" disabled={saving}>
+                            {saving ? '...' : 'Salva'}
+                        </button>
+                    </form>
+                )}
             </div>
 
-            {/* INPUT VIEW */}
-            {view === 'input' && (
-                <div className="pesate-input-section">
-                    <div className="date-display">
-                        <div className="date-label">Oggi</div>
-                        <div className="date-value">{formatDate(today)}</div>
-                    </div>
-
-                    {todayPesata ? (
-                        <div className="pesata-saved glass">
-                            <div className="saved-icon">✓</div>
-                            <div className="saved-info">
-                                <div className="saved-label">Pesata registrata</div>
-                                <div className="saved-peso">{todayPesata.peso} kg</div>
-                                {todayPesata.note && (
-                                    <div className="saved-note">{todayPesata.note}</div>
-                                )}
-                            </div>
-                            <button 
-                                className="delete-btn"
-                                onClick={() => handleDelete(today)}
-                            >
-                                🗑️
-                            </button>
-                        </div>
-                    ) : (
-                        <form onSubmit={handleSave} className="pesata-form glass-strong">
-                            <div className="form-group">
-                                <label className="form-label">Peso (kg)</label>
-                                <input
-                                    type="number"
-                                    step="0.1"
-                                    value={peso}
-                                    onChange={(e) => setPeso(e.target.value)}
-                                    placeholder="Es: 99.9"
-                                    required
-                                    autoFocus
-                                    className='pesata-form-input'
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label className="form-label">Note (opzionale)</label>
-                                <input
-                                    type="text"
-                                    value={note}
-                                    onChange={(e) => setNote(e.target.value)}
-                                    placeholder="boh"
-                                    className='pesata-form-input'
-                                />
-                            </div>
-
-                            <button 
-                                type="submit" 
-                                className="save-btn"
-                                disabled={saving}
-                            >
-                                {saving ? 'Salvataggio...' : 'SALVA'}
-                            </button>
-                        </form>
-                    )}
-
-                    {/* Storico recente */}
-                    <div className="recent-history">
-                        <h3 className="section-title">Ultime Pesate</h3>
-                        {Object.entries(pesate)
-                            .sort((a, b) => b[0].localeCompare(a[0]))
-                            .slice(0, 5)
-                            .map(([date, data]) => (
-                                <div key={date} className="history-item">
-                                    <div className="history-date">{formatDate(date)}</div>
-                                    <div className="history-peso">{data.peso} kg</div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-            )}
-
-            {/* METRICHE VIEW */}
-            {view === 'metriche' && metrics && (
-                <div className="metriche-section">
-                    {/* Timeframe selector */}
+            {/* METRICHE */}
+            {metrics && (
+                <>
                     <div className="timeframe-selector">
-                        <button 
+                        <button
                             className={`timeframe-btn ${timeframe === 'settimana' ? 'active' : ''}`}
                             onClick={() => setTimeframe('settimana')}
                         >
                             Settimana
                         </button>
-                        <button 
+                        <button
                             className={`timeframe-btn ${timeframe === 'mese' ? 'active' : ''}`}
                             onClick={() => setTimeframe('mese')}
                         >
                             Mese
                         </button>
-                        <button 
+                        <button
                             className={`timeframe-btn ${timeframe === 'tutto' ? 'active' : ''}`}
                             onClick={() => setTimeframe('tutto')}
                         >
@@ -247,57 +208,92 @@ function WeightPage() {
                         </button>
                     </div>
 
-                    {/* Cards metriche */}
                     <div className="metrics-grid">
                         <div className="metric-card glass">
-                            <div className="metric-label">Peso Attuale</div>
-                            <div className="metric-value">{metrics.pesoAttuale} kg</div>
+                            <div className="metric-label">Attuale</div>
+                            <div className="metric-value">{metrics.pesoAttuale}</div>
+                            <div className="metric-unit">kg</div>
                         </div>
 
                         <div className="metric-card glass">
                             <div className="metric-label">Variazione</div>
                             <div className={`metric-value ${metrics.differenza < 0 ? 'positive' : 'negative'}`}>
-                                {metrics.differenza > 0 ? '+' : ''}{metrics.differenza.toFixed(1)} kg
+                                {metrics.differenza > 0 ? '+' : ''}{metrics.differenza.toFixed(1)}
                             </div>
+                            <div className="metric-unit">kg</div>
                         </div>
 
                         <div className="metric-card glass">
                             <div className="metric-label">Progresso</div>
                             <div className={`metric-value ${metrics.percentuale < 0 ? 'positive' : 'negative'}`}>
-                                {metrics.percentuale > 0 ? '+' : ''}{metrics.percentuale}%
+                                {metrics.percentuale > 0 ? '+' : ''}{metrics.percentuale}
                             </div>
+                            <div className="metric-unit">%</div>
                         </div>
 
                         <div className="metric-card glass">
-                            <div className="metric-label">Media Periodo</div>
-                            <div className="metric-value">{metrics.media} kg</div>
+                            <div className="metric-label">Media</div>
+                            <div className="metric-value">{metrics.media}</div>
+                            <div className="metric-unit">kg</div>
                         </div>
 
                         <div className="metric-card glass">
-                            <div className="metric-label">Minimo</div>
-                            <div className="metric-value">{metrics.pesoMin} kg</div>
+                            <div className="metric-label">Min</div>
+                            <div className="metric-value">{metrics.pesoMin}</div>
+                            <div className="metric-unit">kg</div>
                         </div>
 
                         <div className="metric-card glass">
-                            <div className="metric-label">Massimo</div>
-                            <div className="metric-value">{metrics.pesoMax} kg</div>
+                            <div className="metric-label">Max</div>
+                            <div className="metric-value">{metrics.pesoMax}</div>
+                            <div className="metric-unit">kg</div>
                         </div>
                     </div>
 
-                    {/* Grafico semplice */}
+                    {/* GRAFICO */}
                     <div className="chart-section glass-strong">
                         <h3 className="section-title">Andamento</h3>
                         <SimpleChart entries={metrics.entries} />
                     </div>
+
+                    {/* STORICO */}
+                    {Object.keys(pesate).length > 0 && (
+                        <div className="history-section">
+                            <h3 className="section-title">Storico</h3>
+                            {Object.entries(pesate)
+                                .sort((a, b) => b[0].localeCompare(a[0]))
+                                .map(([date, data]) => (
+                                    <div key={date} className="history-item">
+                                        <div className="history-date">{formatDate(date)}</div>
+                                        <div className="history-peso">{data.peso} kg</div>
+                                        {date !== today && (
+                                            <button
+                                                className="delete-btn-tiny"
+                                                onClick={() => handleDelete(date)}
+                                            >
+                                                ×
+                                            </button>
+                                        )}
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    )}
+                </>
+            )}
+
+            {!metrics && (
+                <div className="empty-state">
+                    Inserisci la tua prima pesata per vedere le metriche
                 </div>
             )}
         </div>
     );
 }
 
-// Componente grafico semplice
+// Grafico semplice
 function SimpleChart({ entries }) {
-    if (entries.length === 0) return <div>Nessun dato disponibile</div>;
+    if (entries.length === 0) return <div className="empty-state">Nessun dato</div>;
 
     const pesi = entries.map(([_, data]) => data.peso);
     const min = Math.min(...pesi);
@@ -306,12 +302,12 @@ function SimpleChart({ entries }) {
 
     return (
         <div className="simple-chart">
-            {entries.map(([date, data], idx) => {
-                const height = ((data.peso - min) / range) * 100;
+            {entries.map(([date, data]) => {
+                const height = Math.max(((data.peso - min) / range) * 100, 5);
                 return (
                     <div key={date} className="chart-bar-container">
                         <div className="chart-bar">
-                            <div 
+                            <div
                                 className="chart-bar-fill"
                                 style={{ height: `${height}%` }}
                             />
@@ -327,7 +323,6 @@ function SimpleChart({ entries }) {
     );
 }
 
-// Utility
 function formatDate(dateStr) {
     const date = new Date(dateStr);
     const options = { weekday: 'short', day: 'numeric', month: 'short' };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeIcon, ShoppingCartIcon, BookIcon } from '../utils/Icons';
+import { HomeIcon, ShoppingCartIcon, BookIcon, ScaleIcon } from '../utils/Icons';
 
 function Navigation({ currentPage, setCurrentPage, navVisible }) {
     return (
@@ -7,22 +7,31 @@ function Navigation({ currentPage, setCurrentPage, navVisible }) {
             <div className="nav-menu">
                 <button
                     className={`nav-btn ${currentPage === 'home' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('home')}>
-                    Piano
+                    onClick={() => setCurrentPage('home')}
+                >
+                    <HomeIcon />
+                    <span className="nav-label">Piano</span>
                 </button>
                 <button
                     className={`nav-btn ${currentPage === 'shopping' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('shopping')}>
-                    Spesa
+                    onClick={() => setCurrentPage('shopping')}
+                >
+                    <ShoppingCartIcon />
+                    <span className="nav-label">Spesa</span>
                 </button>
                 <button
                     className={`nav-btn ${currentPage === 'cad' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('cad')}>
-                    CAD
+                    onClick={() => setCurrentPage('cad')}
+                >
+                    <BookIcon />
+                    <span className="nav-label">CAD</span>
                 </button>
-                <button className={`nav-btn ${currentPage === 'weight' ? 'active' : ''}`}
-                    onClick={() => setCurrentPage('weight')}>
-                    Pesate
+                <button
+                    className={`nav-btn ${currentPage === 'weight' ? 'active' : ''}`}
+                    onClick={() => setCurrentPage('weight')}
+                >
+                    <ScaleIcon />
+                    <span className="nav-label">Peso</span>
                 </button>
             </div>
         </div>

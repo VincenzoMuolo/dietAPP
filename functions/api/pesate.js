@@ -1,13 +1,17 @@
 // functions/api/pesate.js
 export async function onRequestGet(context) {
     try {
-        const userId = 'default_user'; // TODO: Implementare autenticazione
+        const userId = 'default_user';
         const data = await context.env.PESATE_KV.get(userId);
         
         return new Response(data || '{}', {
-            headers: { 'Content-Type': 'application/json' }
+            headers: { 
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
         });
     } catch (error) {
+        console.error('GET Error:', error);
         return new Response(JSON.stringify({ error: error.message }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
@@ -34,10 +38,14 @@ export async function onRequestPost(context) {
         // Salva
         await context.env.PESATE_KV.put(userId, JSON.stringify(pesate));
         
-        return new Response(JSON.stringify({ success: true }), {
-            headers: { 'Content-Type': 'application/json' }
+        return new Response(JSON.stringify({ success: true, pesate }), {
+            headers: { 
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
         });
     } catch (error) {
+        console.error('POST Error:', error);
         return new Response(JSON.stringify({ error: error.message }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
@@ -58,12 +66,26 @@ export async function onRequestDelete(context) {
         await context.env.PESATE_KV.put(userId, JSON.stringify(pesate));
         
         return new Response(JSON.stringify({ success: true }), {
-            headers: { 'Content-Type': 'application/json' }
+            headers: { 
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
         });
     } catch (error) {
+        console.error('DELETE Error:', error);
         return new Response(JSON.stringify({ error: error.message }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
         });
     }
+}
+
+export async function onRequestOptions(context) {
+    return new Response(null, {
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        }
+    });
 }

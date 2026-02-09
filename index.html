@@ -1,19 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>diet-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>DietAPP</title>
 
     <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#4CAF50" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="background-color" content="#0a0a0a" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="DietAPP" />
     
     <!-- Icone iOS -->
-    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo-192.png" />
     
     <!-- Manifest -->
     <link rel="manifest" href="/manifest.json" />
@@ -21,19 +24,140 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/icon-192.png" />
 
+    <!-- Splash Screen CSS Inline -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0a0a0a;
+        color: #e5e5e5;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      
+      #splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #0a0a0a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.4s ease;
+      }
+      
+      #splash-screen.fade-out {
+        opacity: 0;
+        pointer-events: none;
+      }
+      
+      .splash-logo {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 32px;
+        animation: float 2s ease-in-out infinite;
+      }
+      
+      .splash-title {
+        font-size: 36px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 48px;
+        letter-spacing: -1px;
+      }
+      
+      .splash-spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid rgba(16, 185, 129, 0.15);
+        border-top-color: #10b981;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Preload app background */
+      #app {
+        background-color: #0a0a0a;
+        min-height: 100vh;
+      }
+    </style>
   </head>
   <body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+      <img src="/logo.png" alt="DietAPP" class="splash-logo" onerror="this.style.display='none'" />
+      <div class="splash-title">DietAPP</div>
+      <div class="splash-spinner"></div>
+    </div>
+
     <div id="app"></div>
+    
     <script type="module" src="/src/main.jsx"></script>
-    <!-- Service Worker Registration -->
+    
+    <!-- Service Worker & Splash Screen -->
     <script>
+      // Service Worker
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/sw.js')
-            .then((reg) => console.log('✅ Service Worker registrato'))
-            .catch((err) => console.log('❌ Errore SW:', err));
+            .then(reg => console.log('✅ SW registrato'))
+            .catch(err => console.log('❌ Errore SW:', err));
         });
       }
+
+      // Rimuovi splash screen
+      let appLoaded = false;
+      
+      function removeSplash() {
+        if (appLoaded) return;
+        appLoaded = true;
+        
+        const splash = document.getElementById('splash-screen');
+        if (splash) {
+          setTimeout(() => {
+            splash.classList.add('fade-out');
+            setTimeout(() => {
+              splash.remove();
+            }, 400);
+          }, 300); // Mostra per almeno 300ms
+        }
+      }
+
+      // Rimuovi quando DOM è pronto
+      if (document.readyState === 'complete') {
+        removeSplash();
+      } else {
+        window.addEventListener('load', removeSplash);
+      }
+
+      // Fallback timeout (rimuovi dopo 3 secondi comunque)
+      setTimeout(removeSplash, 3000);
     </script>
   </body>
 </html>

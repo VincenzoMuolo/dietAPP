@@ -1,12 +1,12 @@
 {
-  "name": "DietAPP - Piano Alimentare",
+  "name": "DietAPP",
   "short_name": "DietAPP",
-  "description": "Gestione piano alimentare settimanale con lista spesa intelligente",
+  "description": "App per gestione piano alimentare",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#4CAF50",
-  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/logo-192.png",
@@ -29,5 +29,6 @@
     }
   ],
   "categories": ["health", "lifestyle"],
-  "lang": "it-IT"
+  "lang": "it",
+  "dir": "ltr"
 }
