@@ -22,7 +22,7 @@ function NotesModal({ notesData, onClose, autoTrackEnabled, onEnableTracking, on
                             </div>
                         </div>
                         {!autoTrackEnabled ? (
-                            <div style={{display: 'flex', gap: 'var(--space-sm)', alignItems: 'center'}}>
+                            <div className='settings-week-sel' style={{display: 'flex', gap: 'var(--space-sm)', alignItems: 'center'}}>
                                 <select 
                                     value={selectedWeek} 
                                     onChange={(e) => setSelectedWeek(Number(e.target.value))}

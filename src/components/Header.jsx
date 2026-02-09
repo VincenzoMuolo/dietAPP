@@ -6,7 +6,7 @@ function Header({ onInfoClick }) {
         <div className="header glass-strong">
             <div className="logo-container">
                 <div className="logo-icon">
-                    <img src="/logo.png" alt="" width="48px" height="48px" />
+                    <img src="/logo.png" alt="" width="36px" height="36px" />
                 </div>
                 <div className="logo-text">DietAPP</div>
             </div>
