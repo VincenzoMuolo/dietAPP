@@ -1,5 +1,6 @@
 import React from 'react';
 import { getDayName, isPreparedDish } from '../utils/Utils';
+import { ArrowLeftIcon, ArrowRightIcon } from '../utils/Icons';
 
 function HomePage({ dietData, currentWeek, currentDayIndex, days, goToPreviousDay, goToNextDay, canGoPrevious, canGoNext, setModalCad, getCadByCode }) {
     const currentDayKey = days[currentDayIndex];
@@ -52,7 +53,7 @@ function HomePage({ dietData, currentWeek, currentDayIndex, days, goToPreviousDa
                         cursor: canGoPrevious ? 'pointer' : 'not-allowed'
                     }}
                 >
-                    ‹
+                    <ArrowLeftIcon />
                 </div>
                 
                 <div className="date-info">
@@ -68,7 +69,7 @@ function HomePage({ dietData, currentWeek, currentDayIndex, days, goToPreviousDa
                         cursor: canGoNext ? 'pointer' : 'not-allowed'
                     }}
                 >
-                    ›
+                    <ArrowRightIcon />
                 </div>
             </div>
 

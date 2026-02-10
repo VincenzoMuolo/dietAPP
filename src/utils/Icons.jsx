@@ -1,3 +1,4 @@
+// Icons.jsx - Icone minimal monocolore
 
 export const HomeIcon = () => (
     <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -22,9 +23,14 @@ export const BookIcon = () => (
 );
 
 export const ScaleIcon = () => (
-    <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-        <path d="M9 22V12h6v10" />
+    <svg className="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter">
+        {/* Bilancia classica */}
+        <rect x="11" y="3" width="2" height="12" />
+        <circle cx="12" cy="3" r="1.5" fill="currentColor" />
+        <path d="M6 15h12" />
+        <path d="M4 15l2-6h4l2 6H4z" />
+        <path d="M12 15l2-6h4l2 6h-8z" />
+        <rect x="4" y="19" width="16" height="2" />
     </svg>
 );
 
@@ -41,11 +47,21 @@ export const CheckIcon = () => (
 );
 
 export const SettingsIcon = () => (
-    <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="3" width="14" height="5" rx="2.5" stroke="currentColor" strokeWidth="1.5"/>
-        <circle cx="14" cy="5.5" r="1.5" fill="currentColor"/>
-        
-        <rect x="3" y="12" width="14" height="5" rx="2.5" stroke="currentColor" strokeWidth="1.5"/>
-        <circle cx="6" cy="14.5" r="1.5" fill="currentColor"/>
-    </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+            </svg>
 );
+export const ArrowLeftIcon = () => (
+    <svg width="80%" height="80%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+ );
+
+export const ArrowRightIcon = () => (
+ <svg width="80%" height="80%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+ </svg>
+  );
