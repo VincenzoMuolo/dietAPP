@@ -1,0 +1,26 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "dietapp"
+main = "src/index.js"
+compatibility_date = "2026-02-07"
+
+# ============================================
+# ASSETS - Serve React build from ./dist
+# ============================================
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# ============================================
+# D1 DATABASE - SQLite Database
+# ============================================
+[[d1_databases]]
+binding = "DB"
+database_name = "dietapp-db"
+database_id = "4677f326-8512-4ad0-a49a-239dcb33b993"
+# Ottieni l'ID con: npx wrangler d1 create dietapp-db
+
+# ============================================
+# OBSERVABILITY (Opzionale)
+# ============================================
+[observability]
+enabled = true

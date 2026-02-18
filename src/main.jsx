@@ -8,6 +8,7 @@ import CadPage from './pages/CadPage';
 import Navigation from './components/Navigation';
 import CadModal from './components/CadModal';
 import NotesModal from './components/NotesModal';
+import RecipesPage from './pages/RecipesPage';
 import { getDayOfWeek, getWeeksSinceStart } from './utils/Utils';
 import './style.css'
 
@@ -20,7 +21,7 @@ function App() {
     const [loaded, setLoaded] = useState(false);
     const [autoTrackEnabled, setAutoTrackEnabled] = useState(false);
     const [trackingStartDate, setTrackingStartDate] = useState(null);
-    const [trackingStartWeek, setTrackingStartWeek] = useState(1); // ← NUOVO
+    const [trackingStartWeek, setTrackingStartWeek] = useState(1);
     const [navVisible, setNavVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -76,54 +77,60 @@ function App() {
     useEffect(() => {
         const savedAutoTrack = localStorage.getItem('autoTrackEnabled');
         const savedStartDate = localStorage.getItem('trackingStartDate');
-        const savedStartWeek = localStorage.getItem('trackingStartWeek'); // ← NUOVO
+        const savedStartWeek = localStorage.getItem('trackingStartWeek');
         
         if (savedAutoTrack === 'true') {
             setAutoTrackEnabled(true);
             setTrackingStartDate(savedStartDate);
             
-            // ← NUOVO: Ripristina la settimana salvata
             if (savedStartWeek) {
                 const weekNum = Number(savedStartWeek);
                 setTrackingStartWeek(weekNum);
-                setCurrentWeek(weekNum);
             }
         }
     }, []);
 
-    // Auto-track day changes
+    // Auto-track day changes - CORRETTO!
     useEffect(() => {
         if (autoTrackEnabled && trackingStartDate && dietState && loaded) {
             const currentDay = getDayOfWeek();
             
-            // ← MODIFICATO: Usa trackingStartWeek invece di calcolare
-            const days = Object.keys(dietState.piano_alimentare[`settimana_${trackingStartWeek}`]);
+            // Calcola settimana corrente in base ai giorni passati dalla data di inizio
+            const daysPassed = Math.floor(
+                (new Date() - new Date(trackingStartDate)) / (1000 * 60 * 60 * 24)
+            );
+            const weeksPassed = Math.floor(daysPassed / 7);
+            
+            // Calcola la settimana corrente (con ciclo 1-3)
+            const currentWeekNumber = ((trackingStartWeek - 1 + weeksPassed) % 3) + 1;
+            
+            // Trova indice giorno nella settimana corrente
+            const days = Object.keys(dietState.piano_alimentare[`settimana_${currentWeekNumber}`]);
             const dayIdx = days.indexOf(currentDay);
             
             if (dayIdx !== -1) {
-                setCurrentWeek(trackingStartWeek); // ← Usa settimana di partenza
+                setCurrentWeek(currentWeekNumber);
                 setCurrentDayIndex(dayIdx);
             }
         }
     }, [autoTrackEnabled, trackingStartDate, trackingStartWeek, dietState, loaded]);
 
-    // ← MODIFICATO: Accetta parametro startWeek
     const enableAutoTracking = (startWeek = 1) => {
         const startDate = new Date().toISOString();
         setAutoTrackEnabled(true);
         setTrackingStartDate(startDate);
-        setTrackingStartWeek(startWeek); // ← NUOVO
+        setTrackingStartWeek(startWeek);
         
         localStorage.setItem('autoTrackEnabled', 'true');
         localStorage.setItem('trackingStartDate', startDate);
-        localStorage.setItem('trackingStartWeek', startWeek.toString()); // ← NUOVO
+        localStorage.setItem('trackingStartWeek', startWeek.toString());
         
         if (dietState) {
             const currentDay = getDayOfWeek();
-            const days = Object.keys(dietState.piano_alimentare[`settimana_${startWeek}`]); // ← Usa settimana scelta
+            const days = Object.keys(dietState.piano_alimentare[`settimana_${startWeek}`]);
             const dayIdx = days.indexOf(currentDay);
             if (dayIdx !== -1) {
-                setCurrentWeek(startWeek); // ← Imposta settimana scelta
+                setCurrentWeek(startWeek);
                 setCurrentDayIndex(dayIdx);
             }
         }
@@ -132,11 +139,11 @@ function App() {
     const resetAutoTracking = () => {
         setAutoTrackEnabled(false);
         setTrackingStartDate(null);
-        setTrackingStartWeek(1); // ← NUOVO: Reset anche settimana
+        setTrackingStartWeek(1);
         
         localStorage.removeItem('autoTrackEnabled');
         localStorage.removeItem('trackingStartDate');
-        localStorage.removeItem('trackingStartWeek'); // ← NUOVO
+        localStorage.removeItem('trackingStartWeek');
         
         setCurrentWeek(1);
         setCurrentDayIndex(0);
@@ -181,8 +188,14 @@ function App() {
         const currentDay = getDayOfWeek();
         const currentDayKey = days[currentDayIndex];
         
-        // ← MODIFICATO: Confronta con trackingStartWeek
-        return trackingStartWeek === currentWeek && currentDay === currentDayKey;
+        // Calcola settimana corrente
+        const daysPassed = Math.floor(
+            (new Date() - new Date(trackingStartDate)) / (1000 * 60 * 60 * 24)
+        );
+        const weeksPassed = Math.floor(daysPassed / 7);
+        const currentWeekNumber = ((trackingStartWeek - 1 + weeksPassed) % 3) + 1;
+        
+        return currentWeekNumber === currentWeek && currentDay === currentDayKey;
     };
 
     return (
@@ -208,6 +221,7 @@ function App() {
             {currentPage === 'shopping' && <ShoppingPage dietData={dietState} productList={productList} />}
             {currentPage === 'cad' && <CadPage cadData={cadState} setModalCad={setModalCad} />}
             {currentPage === 'weight' && <WeightPage />}
+            {currentPage === 'recipes' && <RecipesPage />}
             <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} navVisible={navVisible} />
 
             {modalCad && (
